@@ -40,3 +40,6 @@ bower_components
 # Node.JS
 node_modules
 npm-debug.log
+
+# gulp-gh-pages
+.publish
