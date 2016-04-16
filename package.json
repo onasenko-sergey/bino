@@ -48,6 +48,7 @@
     "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.1.0",
     "gulp-if": "^2.0.0",
+    "gulp-inline-source": "^2.1.0",
     "gulp-jade": "^1.1.0",
     "gulp-jade-inheritance": "^0.5.3",
     "gulp-jsbeautifier": "^1.0.1",
