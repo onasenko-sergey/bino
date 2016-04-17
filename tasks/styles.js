@@ -12,6 +12,9 @@ import rename from 'gulp-rename';
 import sourcemaps from 'gulp-sourcemaps';
 import errorHandler from 'gulp-plumber-error-handler';
 
+import bootstrap from 'bootstrap-styl';
+import poststylus from 'poststylus';
+
 const isDebug = process.env.NODE_ENV !== 'production';
 
 gulp.task('styles', () => (
@@ -21,7 +24,9 @@ gulp.task('styles', () => (
 		.pipe(stylus({
 			use: [
 				importIfExist(),
+				bootstrap(),
 				rupture(),
+				poststylus('lost'),
 				autoprefixer()
 			],
 			'include css': true
