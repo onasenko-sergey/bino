@@ -1,0 +1,16 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/sourcesanspro-bold.eot');
+	src: url('../fonts/sourcesanspro-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-bold.woff2') format('woff2'), url('../fonts/sourcesanspro-bold.woff') format('woff'), url('../fonts/sourcesanspro-bold.ttf') format('truetype'), url('../fonts/sourcesanspro-bold.svg#source_sans_probold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../fonts/sourcesanspro-semibold.eot');
+	src: url('../fonts/sourcesanspro-semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/sourcesanspro-semibold.woff2') format('woff2'), url('../fonts/sourcesanspro-semibold.woff') format('woff'), url('../fonts/sourcesanspro-semibold.ttf') format('truetype'), url('../fonts/sourcesanspro-semibold.svg#source_sans_prosemibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+
+}
