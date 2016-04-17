@@ -1,6 +1,8 @@
-extends /blocks/layout-default/layout-default
+extends ../blocks/layout-default/layout-default
+include ../blocks/index/index
 
 block head
 	- var pageTitle = 'Bino';
 
 block content
+	+index
