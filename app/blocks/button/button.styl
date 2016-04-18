@@ -1,0 +1,26 @@
+.button
+	@extends .btn
+	button-variant(#fff, $highlight-color, $highlight-color) // color, background, border
+	font-family $OpenSans
+	text-transform uppercase
+
+	// Buttons for welcome slider
+	&_ws
+		margin-x(13px)
+		margin-bottom 13px
+		display block
+
+		+above('sm')
+			display inline-block
+			min-width 200px
+
+		+above('md')
+			button-size(20px, 20px, 14px, 1em, 2px) // padding-vertical, padding-horizontal, font-size, line-height, border-radius
+			width 225px
+
+
+	&_ws_transp
+		button-variant(#fff, transparent, #fff)
+
+		+above('md')
+			padding-y(18px)
