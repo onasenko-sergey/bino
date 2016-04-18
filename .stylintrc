@@ -88,6 +88,7 @@
 		"font",
 		"font-family",
 		"font-size",
+		"font-range",
 		"font-weight",
 		"font-style",
 		"font-variant",
@@ -214,7 +215,7 @@
 	// "trailingWhitespace": "never", // bug: throw error when there are spaces after rule before comment
 	"universal": "never",
 	"valid": true, // discuss 8
-	"mixins": ["size", "margin-x", "margin-y", "padding-x", "padding-y"],
+	"mixins": ["size", "margin-x", "margin-y", "padding-x", "padding-y", "font-range"],
 	"zeroUnits": "never",
 	"zIndexNormalize": false
 }

@@ -26,7 +26,7 @@ gulp.task('styles', () => (
 				importIfExist(),
 				bootstrap(),
 				rupture(),
-				poststylus('lost'),
+				poststylus(['lost', 'rucksack-css']),
 				autoprefixer()
 			],
 			'include css': true
