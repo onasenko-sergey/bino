@@ -1,0 +1,50 @@
+@require 'sliders_entrances/slideInLeft'
+@require 'sliders_entrances/slideInRight'
+
+.welcome-slider
+	position relative
+	padding-top calc(132px + 10%) // offset for navigation
+	padding-bottom calc(66px + 5%) // offset for anchor icon
+
+.welcome-slider__control
+	margin-top 100px // prevent control intersection with collapsed navigation button
+
+	&:hover .fa
+		color #fff
+		background-color $highlight-color
+		opacity 1
+
+	.fa
+		position absolute
+		top 360px
+		left 0
+		margin-top -15px
+		padding-top 4px
+		padding-bottom 6px
+		width 100%
+		color #303030
+		background-color #fff
+
+		+above('sm')
+			left 50%
+			margin-left -12px
+			padding-x(10px)
+			width auto
+
+		+above('md')
+			margin-top -23px
+			margin-left -23px
+			padding-x(16px)
+			font-size 35px
+
+	&.left
+	&.right
+		animation-duration 1s
+		animation-delay .5s
+		animation-fill-mode backwards
+
+	&.left
+		animation-name slideInLeft
+
+	&.right
+		animation-name slideInRight

@@ -1,0 +1,35 @@
+include ../ws-slide/ws-slide
+include ../button/button
+
+mixin welcome-slider()
+	+b.welcome-slider.carousel.slide#welcome-slider&attributes(attributes)
+		.carousel-inner(role='listbox')
+			.item.active
+				+ws-slide
+					+e.P.headline Our Clients Are Our First Priority
+					h1 Welcome to Bino
+					+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					+e.buttons
+						+button._ws Get started now
+						+button._ws._ws_transp Learn more
+			.item
+				+ws-slide
+					+e.P.headline At next slide
+					+e.P.header Learn about Bino
+					+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		+e.A.control.carousel-control.left(
+			data-slide="prev"
+			href="#welcome-slider"
+			role="button"
+		)
+			i.fa.fa-angle-left(aria-hidden="true")
+			span.sr-only Previous
+		+e.A.control.carousel-control.right(
+			data-slide="next"
+			href="#welcome-slider"
+			role="button"
+		)
+			i.fa.fa-angle-right(aria-hidden="true")
+			span.sr-only Next
+
