@@ -14,6 +14,7 @@ import errorHandler from 'gulp-plumber-error-handler';
 
 import bootstrap from 'bootstrap-styl';
 import poststylus from 'poststylus';
+import animate from 'animate-styl';
 
 const isDebug = process.env.NODE_ENV !== 'production';
 
@@ -25,6 +26,7 @@ gulp.task('styles', () => (
 			use: [
 				importIfExist(),
 				bootstrap(),
+				animate(),
 				rupture(),
 				poststylus(['lost', 'rucksack-css']),
 				autoprefixer()
