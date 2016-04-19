@@ -1,0 +1,40 @@
+.header
+	position relative
+	background-color #3B3C41
+	background-size cover
+
+	+at('xs') // 480px
+		retinaBackground(ws-bg-xs, jpg)
+
+	+above('sm') // 768px
+		retinaBackground(ws-bg-sm, jpg)
+
+	+above('md') // 1200px
+		retinaBackground(ws-bg-md, jpg)
+
+	+above('xl') // 1920px
+		retinaBackground(ws-bg-lg, jpg)
+
+	// Down arrow("anchor")
+	&:before
+	&:after
+		position absolute
+		left 50%
+		content ''
+
+	&:before
+		z-index 9
+		bottom -37px
+		margin-left -37px
+		width 64px
+		height 64px
+		background-color #f4f5f9
+		background-clip padding-box
+		border 5px solid rgba(255, 255, 255, .25)
+		border-radius 50%
+
+	&:after
+		retinaSprite($down_icon_group)
+		z-index 10
+		bottom -16px
+		margin-left -16px
