@@ -1,0 +1,24 @@
+.main
+	position relative
+	margin-top 4px
+
+	// make transparent triangle effect
+	&:before
+	&:after
+		position absolute
+		top -121px
+		width 50%
+		height 121px
+		content ''
+		background-repeat no-repeat
+		background-size 100% 100%
+
+	&:before
+		left 0
+		background-image url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%271.1%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27%20viewBox%3D%270%200%20960%20121%27%20preserveAspectRatio%3D%27xMaxYMax%27%3E%3Cstyle%20type%3D%27text%2Fcss%27%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Cpolygon%20class%3D%27st0%27%20points%3D%270%2C121%200%2C0%20960%2C121%27%2F%3E%3C%2Fsvg%3E")
+		background-position bottom left
+
+	&:after
+		right 0
+		background-image url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%271.1%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27%20viewBox%3D%270%200%20960%20121%27%20preserveAspectRatio%3D%27xMinYMax%27%3E%3Cstyle%20type%3D%27text%2Fcss%27%3E.st0%7Bfill%3A%23FFF%3B%7D%3C%2Fstyle%3E%3Cpolygon%20class%3D%27st0%27%20points%3D%270%2C121%20960%2C0%20960%2C121%27%2F%3E%3C%2Fsvg%3E")
+		background-position right bottom
