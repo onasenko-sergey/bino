@@ -1,9 +1,10 @@
 extends ../blocks/layout-default/layout-default
 include ../blocks/button/button
+include ../blocks/logo/logo
 
 // Catalog item mixin
 mixin ci(name)
-	div(style='margin: 32px; border: 1px solid black')
+	div(style='margin: 32px; border: 1px solid black; background-color: #ababab')
 		p(style='padding: 12px; font-size: 20px; font-weight: bold;') #{name||'---'}
 		div(style='padding: 12px; border-top: 1px solid black')
 			block
@@ -17,3 +18,6 @@ block content
 		+button._ws Get started now
 		div(style='margin-top: 24px; padding: 24px; background-color: #456')
 			+button._ws._ws_transp Learn more
+
+	+ci('logo')
+			+logo
