@@ -1,0 +1,19 @@
+.nav-link
+	margin-x(58px)
+	padding-right 24px
+	font-family $OpenSans
+	font-size 14px
+	text-align right
+	text-transform uppercase
+	letter-spacing .006em
+
+	+above('lg')
+		margin-right 0
+		padding-right 0
+		text-align left
+
+	&.active
+		border-bottom 1px solid $highlight-color
+
+.nav-link__a
+	text-decoration none

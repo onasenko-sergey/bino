@@ -1,0 +1,36 @@
+include ../logo/logo
+include ../nav-link/nav-link
+
+mixin navigation()
+	+b.navigation&attributes(attributes)
+		+e.NAV.navbar.navbar.navbar-default
+			h2.sr-only Site navigation
+			.navbar-header
+				+e.BUTTON.toggle.navbar-toggle.collapsed(
+					aria-expanded="false"
+					data-toggle="collapse"
+					data-target="#main-nav"
+					type="button"
+				)
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				+e.A.logo.navbar-brand(href="#")
+					+logo
+			.collapse.navbar-collapse#main-nav(role="navigation")
+				+e.UL.links.nav.navbar-nav.navbar-right
+					+nav-link.active
+						+e.a(href="#") Home
+					+nav-link
+						+e.a(href="#about-us") About us
+					+nav-link
+						+e.a(href="#portfolio") Portfolio
+					+nav-link
+						+e.a(href="#pricing") Pricing
+					+nav-link
+						+e.a(href="#team") Team
+					+nav-link
+						+e.a(href="#blog") Blog
+					+nav-link
+						+e.a(href="#contact") Contact

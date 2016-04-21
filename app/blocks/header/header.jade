@@ -1,5 +1,7 @@
 include ../welcome-slider/welcome-slider
+include ../navigation/navigation
 
 mixin header()
-	+b.header&attributes(attributes)
+	+b.HEADER.header&attributes(attributes)
 		+welcome-slider
+		+navigation

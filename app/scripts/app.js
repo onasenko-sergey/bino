@@ -3,6 +3,7 @@ import $ from 'jquery';
 
 import 'bootstrap-styl/js/carousel';
 import 'bootstrap-styl/js/transition';
+import 'bootstrap-styl/js/collapse';
 
 $(() => {
 	// svg4everybody();
