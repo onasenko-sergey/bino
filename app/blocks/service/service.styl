@@ -1,0 +1,59 @@
+.service
+	position relative
+	margin-bottom 58px
+	min-height 75px // to place circle icon
+	font-family $SourceSansPro
+	text-align right
+
+	&:last-child
+		margin-bottom 0
+
+	// circle icon
+	&:before
+	&:after
+		position absolute
+		top 50%
+		content ''
+
+	&:before
+		right -86px
+		margin-top -36px
+		width 64px
+		height 64px
+		background-color white
+		border 4px solid #585858
+		border-radius 50%
+
+		+above('md')
+			right -115px
+
+	&:after
+		right -66px
+		margin-top -16px
+
+		+above('md')
+			right -96px
+
+	&.photography:after
+		retinaSprite($photography_group)
+
+	&.web-design:after
+		retinaSprite($web_design_group)
+
+	&.print-design:after
+		retinaSprite($print_design_group)
+
+.service__header
+	margin-bottom 10px
+	font-family $OpenSans
+	font-size 18px
+	font-weight 600
+	text-transform uppercase
+	color $highlight-color
+
+.service__p
+	margin-left 10px
+	font-size 14px
+	line-height 29px
+	letter-spacing .015em
+	color $light-color

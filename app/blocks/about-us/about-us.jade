@@ -1,0 +1,10 @@
+include ../who-we-are/who-we-are
+include ../history/history
+include ../services/services
+
+mixin about-us()
+	+b.ARTICLE.about-us#about-us&attributes(attributes)
+		h2.sr-only About us
+		+who-we-are
+		+history
+		+services

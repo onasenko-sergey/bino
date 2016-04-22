@@ -1,0 +1,99 @@
+.who-we-are
+	+above('xl')
+		lost-center(1170px)
+
+.who-we-are__container
+	lost-clearfix()
+	padding-x(10px)
+	padding-top 50px
+	padding-bottom 30px
+
+	+above('xl')
+		margin-x(-9px)
+		padding-x(0)
+		padding-top 95px
+		padding-bottom 78px
+
+.who-we-are__col
+	position relative
+	padding-top 130px
+	padding-bottom 30px
+	font-family $SourceSansPro
+	font-size 12px
+	font-weight 300
+	line-height 20px
+	text-align center
+	letter-spacing 1.2px
+	color $light-color
+
+	+above('md')
+		lost-column(1/2 2)
+
+	+above('lg')
+		lost-column(1/4)
+
+	// icons in square borders
+	&:before
+	&:after
+		position absolute
+		left 50%
+		content ''
+
+	&:before
+		top 30px
+		margin-left -37px
+		width 71px
+		height 71px
+		border 1px solid #e5e5e5
+		transition .5s
+
+	&:after
+		top 53px
+		margin-left -16px
+
+	&.sleek-design:after
+		retinaSprite($sleek_design_group)
+
+	&.clean-code:after
+		retinaSprite($clean_code_group)
+
+	&.creative-ideas:after
+		retinaSprite($creative_ideas_group)
+
+	&.free-support:after
+		retinaSprite($free_support_group)
+
+	&:hover:before
+		border-color #e74c3c
+		transform rotate(45deg) scale(.85)
+		transition .3s
+
+	&:hover .who-we-are__header
+		color #e74c3c
+		transition .3s
+
+.who-we-are__header
+	position relative
+	margin-bottom 32px
+	font-family $OpenSans
+	font-size 18px
+	font-weight 600
+	letter-spacing .1em
+	color $dark-color
+	text-transform uppercase
+	transition .5s
+
+	// small centered underline
+	&:after
+		position absolute
+		left 50%
+		bottom -19px
+		margin-left -20px
+		width 40px
+		height 1px
+		content ''
+		background-color #888888
+		border-bottom 1px solid #e1e1e1
+
+.who-we-are__p
+	lost-center(250px)

@@ -1,0 +1,59 @@
+include ../service/service
+
+mixin services()
+	+b.SECTION.services.bg-load&attributes(attributes)
+		+e.slider.carousel.slide#services-slider
+			+e.container
+				+e.content
+					header
+						+e.H3.header Our services
+					.carousel-inner-vertical(role="listbox")
+						+e.slide.item.active
+							+e.UL.services-list
+								+service.photography
+									+e.H4.header Photography
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								+service.web-design
+									+e.H4.header Web design
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								+service.print-design
+									+e.H4.header Print design
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									+e.P.p Lorem Ip sum has been the industry's standard dummy text ever.
+						+e.slide.item
+							+e.UL.services-list
+								+service.web-design
+									+e.H4.header Web design
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								+service.print-design
+									+e.H4.header Print design
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									+e.P.p Lorem Ip sum has been the industry's standard dummy text ever.
+								+service.photography
+									+e.H4.header Photography
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+						+e.slide.item
+							+e.UL.services-list
+								+service.print-design
+									+e.H4.header Print design
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									+e.P.p Lorem Ip sum has been the industry's standard dummy text ever.
+								+service.photography
+									+e.H4.header Photography
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+								+service.web-design
+									+e.H4.header Web design
+									+e.P.p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+			+e.OL.indicators.carousel-indicators
+				+e.LI.indicator.active(
+					data-target="#services-slider"
+					data-slide-to="0"
+				)
+				+e.LI.indicator(
+					data-target="#services-slider"
+					data-slide-to="1"
+				)
+				+e.LI.indicator(
+					data-target="#services-slider"
+					data-slide-to="2"
+				)

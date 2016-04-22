@@ -1,0 +1,72 @@
+.history
+	font-family $SourceSansPro
+	border-top 1px solid #e6e7eb
+
+.history__container
+	lost-clearfix()
+	padding-top 200px
+	padding-bottom 50px
+	background-repeat no-repeat
+	background-position 50% 60px
+	background-size 130px
+
+	&.bg-load-on // defer loadding
+	.no-js & // load bg if js is off
+		+below('md')
+			retinaBackground(monitor-xs, png)
+
+		+above('lg')
+			retinaBackground(monitor-lg, png)
+
+	+above('lg')
+		padding-top 121px
+		padding-bottom 135px
+		background-position 9% 50%
+		background-size 40%
+
+	+above('xl')
+		lost-center(1170px)
+		background-position 1px 49%
+		background-size 506px 407px
+
+.history__col
+	padding-x(10px)
+
+	+above('lg')
+		lost-column(1/2 0 0)
+		lost-move(1/2 0 0)
+
+	+above('xl')
+		padding-x(0)
+
+.history__header
+	position relative
+	margin-top 24px
+	margin-bottom 41px
+	padding-left 34px
+	font-size 36px
+	font-weight 700
+	line-height 32px
+	text-transform uppercase
+	letter-spacing .1em
+	color $dark-color
+
+	&:before
+		position absolute
+		top -4px
+		left 0
+		bottom 0
+		width 6px
+		content ''
+		background-color $highlight-color
+
+.history__p
+	margin-left -1px
+	padding-bottom 29px
+	font-size 14px
+	line-height 29px
+	letter-spacing .011em
+	color $light-color
+
+.history__button
+	margin-top 11px

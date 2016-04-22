@@ -1,0 +1,100 @@
+.services
+	position relative
+	padding-top 120px
+	padding-bottom 58px
+	font-family $SourceSansPro
+	text-align right
+	background-color #202020
+	background-repeat no-repeat
+	background-position center
+	background-size cover
+
+	&.bg-load-on
+	.no-js &
+		+below('md')
+			background-image linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url('../images/ipad-xs.jpg')
+			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+				background-image linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .7)), url('../images/ipad-xs@2x.jpg')
+
+		+above('lg')
+			retinaBackground(ipad-lg, jpg)
+			background-position 100%
+			background-size 45.8% 100%
+
+	// increase specificity to change props
+	.services__indicators
+		position absolute
+		top 32.8%
+		left 20px
+		margin 0
+
+		+above('lg')
+			left 2.55%
+
+	.services__indicator
+		position relative
+		margin-top 10px
+		margin-bottom 11px
+		display block
+		width 1px
+		height 34px
+		background-color #3e3e3e
+		border none
+
+		// Create extra active area for indicator link
+		&:before
+			position absolute
+			top 0
+			right -20px
+			left -20px
+			bottom 0
+			content ''
+
+		&.active
+			width 2px
+			background-color $highlight-color
+
+.services__container
+	lost-center(1170px)
+
+.services__content
+	padding-left 40px
+
+	+above('lg')
+		lost-column(8/12)
+		padding-left 70px
+
+	+above('xl')
+		padding-left 0
+
+.services__header
+	position relative
+	margin-top 31px
+	margin-right 10px
+	margin-bottom 68px
+	padding-right 32px
+	font-size 36px
+	font-weight 700
+	line-height 36px
+	text-transform uppercase
+	letter-spacing .1em
+	color #f4f5f9
+
+	&:after
+		position absolute
+		top -1px
+		right 0
+		bottom 1px
+		width 6px
+		content ''
+		background-color $highlight-color
+
+	+above('md')
+		margin-right 185px
+
+.services__slide
+	padding-right 95px
+	min-height 450px
+
+	+above('md')
+		padding-right 185px
