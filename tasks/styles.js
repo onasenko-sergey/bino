@@ -34,7 +34,7 @@ gulp.task('styles', () => (
 			'include css': true
 		}))
 		.pipe(gulpIf(!isDebug, gcmq()))
-		.pipe(gulpIf(!isDebug, nano({zindex: false})))
+		.pipe(gulpIf(!isDebug, nano({svgo:false, zindex: false})))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulpIf(isDebug, sourcemaps.write()))
 		.pipe(gulp.dest('dist/assets/styles'))
