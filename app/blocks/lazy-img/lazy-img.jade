@@ -1,0 +1,14 @@
+mixin lazy-img()
+	+b.IMG.lazy-img(
+		alt='#{attributes["alt"]}'
+		class='#{attributes["class"]}'
+		data-src='assets/images/#{attributes["data-src"]}|assets/images/#{attributes["data-src-retina"]}'
+		src='assets/images/load.gif'
+	)
+	noscript
+		+b.IMG(
+			alt='#{attributes["alt"]}'
+			class='#{attributes["class"]}'
+			srcset='assets/images/#{attributes["data-src-retina"]} 2x'
+			src='assets/images/#{attributes["data-src"]}'
+		)

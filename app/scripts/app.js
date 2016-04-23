@@ -26,5 +26,10 @@ $(() => {
 		offset: loadOffset,
 		selector: '.bg-load'
 	});
+
+	new blazy({
+		offset: loadOffset,
+		selector: '.lazy-img'
+	});
 	/* eslint-enable */
 });
