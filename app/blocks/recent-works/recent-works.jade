@@ -1,0 +1,25 @@
+include ../rw-sample/rw-sample
+
+mixin recent-works()
+	+b.ARTICLE.recent-works#portfolio&attributes(attributes)
+		header
+			+e.H2.header Recent works
+			+e.P.post-header It has survived not only five centuries, but also the leap scrambled it to make a type.
+		+e.P.categories
+			+e.A.categorie.active All
+			+e.SPAN.categorie-divider /
+			+e.A.categorie Print design
+			+e.SPAN.categorie-divider /
+			+e.A.categorie Animation
+			+e.SPAN.categorie-divider /
+			+e.A.categorie Art
+			+e.SPAN.categorie-divider /
+			+e.A.categorie Web design
+			+e.SPAN.categorie-divider /
+			+e.A.categorie Photography
+			+e.SPAN.categorie-divider /
+			+e.A.categorie Video
+		+e.samples
+			- var n = 1
+			while n <= 8
+				+rw-sample('sample-' + n++)

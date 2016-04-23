@@ -1,0 +1,40 @@
+.recent-works
+	@extends .article
+	lost-clearfix()
+	padding-x(10px)
+
+	+above('md')
+		padding-x(0)
+
+.recent-works__header
+	@extends .article__header
+
+.recent-works__post-header
+	@extends .article__post-header
+
+.recent-works__categories
+	padding-top 61px
+	padding-bottom 40px
+	font-family $OpenSans
+	font-size 14px
+	line-height 29px
+	text-transform uppercase
+	letter-spacing .018em
+	color $light-color
+
+.recent-works__categorie
+	&
+	&:visited
+	&:hover
+	&:focus
+		cursor pointer
+		color $light-color
+
+	&.active
+		color $highlight-color
+
+.recent-works__categorie-divider
+	margin-x(13px)
+
+.recent-works__samples
+	line-height 0

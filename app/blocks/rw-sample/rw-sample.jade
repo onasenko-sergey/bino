@@ -1,0 +1,12 @@
+include ../lazy-img/lazy-img
+
+mixin rw-sample(imgName)
+	+b.FIGURE.rw-sample
+		+lazy-img.__img(
+			alt='recent work'
+			data-src='recent-works/#{imgName}.jpg'
+			data-src-retina='recent-works/#{imgName}@2x.jpg'
+		)
+		+e.FIGCAPTION.caption
+			+e.P.p T-shirt design
+			+e.P.p art / t-shirt

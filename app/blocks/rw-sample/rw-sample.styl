@@ -1,0 +1,58 @@
+.rw-sample
+	position relative
+	overflow hidden
+	font-family $OpenSans
+
+	+above('sm')
+		lost-column(1/2 2 0)
+
+	+above('md')
+		lost-column(1/3 3 0)
+
+	+above('lg')
+		lost-column(1/4 4 0)
+
+	&:hover
+		&:before
+			position absolute
+			top 0
+			right 0
+			left 0
+			bottom 0
+			content ''
+			background rgba(231, 76, 60, .8)
+
+		.rw-sample__caption
+			bottom 38px
+			transition 1s
+
+.rw-sample__img
+	max-width 100%
+
+.rw-sample__caption
+	position absolute
+	left 49px
+	bottom -100%
+	color white
+
+	&:before
+		position absolute
+		top -26px
+		left 0
+		width 44px
+		height 3px
+		content ''
+		background-color white
+
+.rw-sample__p
+	font-size 14px
+	font-weight 600
+	line-height 34px
+	text-align left
+	letter-spacing .03em
+
+	&:first-child
+		font-family $SourceSansPro
+		font-size 24px
+		letter-spacing .05em
+		text-transform uppercase
