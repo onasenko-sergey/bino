@@ -1,0 +1,38 @@
+include ../button/button
+include ../check-stats/check-stats
+
+mixin case-study()
+	+b.ARTICLE.case-study&attributes(attributes)
+		header
+			+e.H2.header Case study
+			+e.P.post-header A brief story about how this process works, keep an eye till the end.
+		+e.container.bg-load
+			+e.content
+				+e.slider.carousel.slide#case-study
+					.carousel-inner(role="listbox")
+						+e.slide.item.active
+							+e.H3.slide-header Accumulate creative ideas
+							+e.P.slide-p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the print&shy;ing and typesetting let. Lorem Ipsum has been the industry Printing and type&shy;lorem Ipsum has been the setting let.
+							+button._cs Read more
+						+e.slide.item
+							+e.H3.slide-header Creative ideas accumulate
+							+e.P.slide-p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the print&shy;ing and typesetting let. Lorem Ipsum has been the industry Print&shy;ing and type&shy;lorem Ipsum has been the setting let.
+							+button._cs Read more
+						+e.slide.item
+							+e.H3.slide-header Ideas accumulate creative
+							+e.P.slide-p Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the print&shy;ing and typesetting let. Lorem Ipsum has been the industry Print&shy;ing and type&shy;lorem Ipsum has been the setting let.
+							+button._cs Read more
+					+e.OL.indicators.carousel-indicators
+						+e.LI.indicator.active(
+							data-target="#case-study"
+							data-slide-to="0"
+						)
+						+e.LI.indicator(
+							data-target="#case-study"
+							data-slide-to="1"
+						)
+						+e.LI.indicator(
+							data-target="#case-study"
+							data-slide-to="2"
+						)
+		+check-stats()

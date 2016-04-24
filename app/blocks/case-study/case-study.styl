@@ -1,0 +1,108 @@
+.case-study
+	@extends .article
+	padding-top 146px
+	background-color #f4f5f9
+
+.case-study__header
+	@extends .article__header
+
+.case-study__post-header
+	@extends .article__post-header
+
+.case-study__container
+	lost-center(1170px)
+	margin-top 69px
+	padding-top 46px
+	padding-bottom 47px
+
+	&.bg-load-on
+	.no-js &
+		+above('lg')
+			retinaBackground(case-study-lg, jpg)
+			background-repeat no-repeat
+			background-position 100%
+			background-size 50% 100%
+
+.case-study__content
+	lost-center(600px)
+
+	+above('lg')
+		lost-column(7/12)
+		max-width none
+
+.case-study__slider
+	margin-right 5px
+	background-color white
+	box-shadow 0 3px 5px 0 rgba(0, 0, 0, .1)
+
+.case-study__slide
+	padding-top 259px
+	padding-right 10px
+	padding-left 10px
+	padding-bottom 115px
+
+	+above('sm')
+		padding-right 60px
+		padding-left 58px
+
+	&:before
+		position absolute
+		top 98px
+		left 50%
+		margin-left -45px
+		width 91px
+		height 91px
+		content ''
+		background-color $highlight-color
+		transform rotate(45deg)
+
+	&:after
+		position absolute
+		top 127px
+		left 50%
+		margin-left -18px
+		content ''
+		sprite($case_study)
+
+.case-study__slide-header
+	position relative
+	padding-left 6px
+	padding-bottom 35px
+	font-family $OpenSans
+	font-size 18px
+	font-weight 600
+	letter-spacing .112em
+	text-transform uppercase
+
+	&:after
+		position absolute
+		left 50%
+		bottom 6px
+		margin-left -19px
+		width 40px
+		content ''
+		border-bottom 1px solid black
+
+.case-study__slide-p
+	padding-top 18px
+	padding-bottom 42px
+	font-family $SourceSansPro
+	font-size 14px
+	font-weight 300
+	line-height 24px
+	letter-spacing .1em
+
+.case-study__indicators
+	bottom 47px
+
+	.case-study__indicator
+		margin-right 2px
+		margin-left 0
+		width 12px
+		height 12px
+		background-color #f4f5f9
+		border none
+		border-radius 50%
+
+		&.active
+			background-color $highlight-color

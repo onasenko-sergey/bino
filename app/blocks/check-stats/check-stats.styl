@@ -1,0 +1,122 @@
+.check-stats
+	lost-clearfix()
+	margin-top 149px
+	padding-top 155px
+	padding-bottom 57px
+	font-family $SourceSansPro
+	font-size 18px
+	text-transform capitalize
+	letter-spacing .05em
+	color #f4f5f9
+	background-attachment fixed
+	background-size cover
+
+
+	&.bg-load-on
+	.no-js &
+		+at('xs')
+			retinaBackground(check-stats-bg-xs, jpg)
+
+		+above('sm')
+			retinaBackground(check-stats-bg-sm, jpg)
+
+		+above('md')
+			retinaBackground(check-stats-bg-md, jpg)
+
+		+above('lg')
+			retinaBackground(check-stats-bg-lg, jpg)
+
+.check-stats__container
+	lost-center(1170px)
+
+.check-stats__stat
+	lost-column(1/2 2 10px)
+	position relative
+	margin-bottom 64px
+	padding-top 157px
+	float left
+	min-height 235px
+
+	&:last-child
+		lost-move(1/4)
+
+	&:before
+	&:after
+		position absolute
+		left 50%
+		content ''
+
+	&:before
+		top 15px
+		margin-left -40px
+		width 80px
+		height 80px
+		border 1px solid #ffffff
+		border-radius 50%
+
+	&:after
+		top 39px
+		margin-left -16px
+
+	&.favourites:after
+		retinaSprite($favourites_group)
+
+	&.last-posts:after
+		retinaSprite($last_posts_group)
+
+	&.total-posts:after
+		retinaSprite($total_posts_group)
+
+	&.campaigns:after
+		retinaSprite($campaigns_group)
+
+	&.features:after
+		retinaSprite($features_group)
+
+	+above('sm')
+		lost-column(1/3 3)
+
+		&:before
+			top 0
+			margin-left -55px
+			width 110px
+			height 110px
+
+		&:last-child
+		&:nth-last-child(2)
+			lost-move(1/6)
+
+	+above('md')
+		lost-column(1/5 5)
+
+		&:last-child
+		&:nth-last-child(2)
+			lost-move(0)
+
+	+above('xl')
+		margin-bottom 64px
+
+		&.favourites
+			margin-right 107px
+			width 132px
+
+		&.last-posts
+			margin-right 88px
+			width 170px
+
+		&.total-posts
+			margin-right 88px
+			width 170px
+
+		&.campaigns
+			width 170px
+
+		&.features
+			float right
+			width 150px
+
+.check-stats__num
+	padding-bottom 9px
+	display block
+	font-size 30px
+	font-weight 700
