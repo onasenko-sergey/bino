@@ -1,0 +1,34 @@
+.pricing
+	@extends .article
+	padding-x(10px)
+	padding-top 152px
+
+	+above('xl')
+		padding-x(0)
+		padding-bottom 143px
+
+.pricing__container
+	lost-center(1170px)
+
+.pricing__header
+	@extends .article__header
+	margin-left 25px
+
+.pricing__post-header
+	@extends .article__post-header
+
+.pricing__cards
+	margin-top 69px
+
+.pricing__card-wrap
+	+above('md')
+		lost-column(1/2 2 15px)
+
+		&:last-child
+			lost-move(1/4)
+
+	+above('xl')
+		lost-column(1/3 3 15px)
+
+		&:last-child
+			lost-move(0)

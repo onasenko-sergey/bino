@@ -1,0 +1,15 @@
+include ../pricing-card/pricing-card
+
+mixin pricing()
+	+b.ARTICLE.pricing#pricing&attributes(attributes)
+		+e.container
+			header
+				+e.H2.header Our pricing
+				+e.P.post-header A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.
+			+e.cards
+				+e.card-wrap
+					+pricing-card('Starter', 19)._gray.__card
+				+e.card-wrap
+					+pricing-card('Premium', 39).__card
+				+e.card-wrap
+					+pricing-card('Business', 99)._gray.__card

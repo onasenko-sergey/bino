@@ -1,0 +1,16 @@
+include ../button/button
+
+mixin pricing-card(plan, price)
+	+b.pricing-card&attributes(attributes)
+		+e.HEADER.header
+			+e.H3.plan #{plan}
+			+e.P.price
+				+e.SPAN.price-val $#{price}
+				br
+				| per month
+		+e.UL.features
+			+e.feature Competition analysis methods
+			+e.feature All ranked URLs
+			+e.feature International support system
+			+e.feature Social media tracking
+		+button._pc.__button Choose plan
