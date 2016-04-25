@@ -1,0 +1,12 @@
+include ../lazy-img/lazy-img
+
+mixin team-member(name, position, photoFile, photoExt)
+	+b.FIGURE.team-member&attributes(attributes)
+		+lazy-img.__photo(
+			alt='member of our team'
+			data-src='team/#{photoFile}.#{photoExt}'
+			data-src-retina='team/#{photoFile}@2x.#{photoExt}'
+		)
+		+e.FIGCAPTION.credentials
+			+e.name #{name}
+			+e.position #{position}

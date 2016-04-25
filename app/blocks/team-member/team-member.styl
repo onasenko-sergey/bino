@@ -1,0 +1,84 @@
+.team-member
+	margin-x(auto)
+	padding-top 20px
+	width 200px
+	font-family $OpenSans
+	text-align center
+
+	&:hover
+		.team-member__photo
+			box-shadow 0 5px 12.75px 2.25px rgba(0, 0, 0, .004)
+			transform scale(1.55)
+			transition .5s
+
+		+above('xl')
+			.team-member__credentials
+				opacity 1
+				transition 1.25s
+
+.team-member__photo
+	position relative
+	z-index 1
+	width 57px
+	height 56px
+	border 3px solid #e74c3c
+	border-radius 50%
+
+.team-member__credentials
+	position relative
+	padding-top 25px
+	padding-bottom 10px
+	text-align center
+
+	+above('xl')
+		padding-top 91px
+		opacity 0
+
+	&:before
+		position absolute
+		z-index 0
+		top 0
+		left 50%
+		margin-left -1px
+		width 1px
+		height 20px
+		content ''
+		background-color #fff
+		transform-origin center bottom
+
+		+above('xl')
+			height 63px
+
+.team-member__name
+	padding-left 2px
+	font-size 24px
+	font-weight 600
+	letter-spacing .1em
+	color #e74c3c
+
+.team-member__position
+	padding-top 16px
+	font-family $SourceSansPro
+	font-size 16px
+	letter-spacing .055em
+	color #fff
+
+.team-member_left
+	+above('xl')
+		text-align left
+
+		&:hover .team-member__photo
+			transform-origin left center
+
+		.team-member__credentials:before
+			transform rotate(-30deg)
+
+.team-member_right
+	+above('xl')
+		text-align right
+
+		&:hover .team-member__photo
+			transform-origin right center
+
+		.team-member__credentials:before
+			transform rotate(30deg)

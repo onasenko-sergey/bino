@@ -1,0 +1,20 @@
+include ../team-member/team-member
+
+mixin team()
+	+b.ARTICLE.team.bg-load#team&attributes(attributes)
+		header
+			+e.container
+				+e.H2.header Our team
+				+e.P.post-header Meet the craziest team. Share your thoughts with them.
+		+e.team.bg-load
+			+e.UL.members
+				+e.member
+					+team-member('Name Soname', 'Position', 'member-1', 'jpg')._left
+				+e.member
+					+team-member('Kazi Erfan', 'UI/UX designer', 'member-2', 'jpg')
+				+e.member
+					+team-member('Name Soname', 'Position', 'member-3', 'jpg')
+				+e.member
+					+team-member('Name Soname', 'Position', 'member-4', 'jpg')
+				+e.member
+					+team-member('Name Soname', 'Position', 'member-5', 'jpg')._right
