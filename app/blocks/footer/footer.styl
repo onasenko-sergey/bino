@@ -1,0 +1,62 @@
+.footer
+	position relative
+	text-align center
+	background-color #202020
+
+.footer__container
+	margin-x(10px)
+	color $dark-color
+
+	+above('xl')
+		lost-center(1170px)
+
+.footer__media
+	font-size 22px
+	line-height 90px
+
+	+above('md')
+		float left
+		text-align left
+
+.footer__media-link
+	margin-right 14.5px
+	display inline-block
+
+	.fa
+		color $dark-color
+
+	.fa-twitter
+		color $highlight-color
+
+.google-plus
+	margin-right -7px
+	margin-bottom -5px
+	width 26px
+	height 26px
+	color $dark-color
+
+.google-plus__color
+	fill $dark-color
+
+.footer__copyright
+	font-family $OpenSans
+	font-size 14px
+	font-weight 600
+	line-height 90px
+
+	+above('md')
+		text-align right
+
+.footer__up
+	position absolute
+	top 0
+	right 77px
+	margin-top -27px
+	margin-right -25px
+	width 53px
+	height 53px
+	line-height 50px
+	text-align center
+	color #fff
+	background-color $highlight-color
+	border-radius 50%
