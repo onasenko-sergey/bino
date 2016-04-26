@@ -1,6 +1,8 @@
 extends ../blocks/layout-default/layout-default
+include ../blocks/keep-in-touch/keep-in-touch
 
 block head
 	- var pageTitle = 'Test';
 
 block content
+	+keep-in-touch

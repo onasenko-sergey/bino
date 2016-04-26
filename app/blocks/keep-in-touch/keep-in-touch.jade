@@ -1,0 +1,37 @@
+mixin keep-in-touch()
+	+b.ARTICLE.keep-in-touch#contact&attributes(attributes)
+		+e.container
+			header
+				+e.H2.header Keep in touch
+				+e.P.post-header Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.
+			+e.ADDRESS.contacts
+				+e.P.contacts-header Our address
+				+e.P.contacts-p House #13, Streat road, Sydney <br/> 2310 Australia
+				+e.P.contacts-header Call us
+				+e.P.contacts-p + 880 168 109 1425 <br/> + 0216809142
+				+e.P.contacts-header Email us
+				+e.P.contacts-p
+					a(href="mailto:contactus@email.com") contactus@email.com
+			+e.send-mail
+				form
+					+e.INPUT.form-control(
+						name="name"
+						placeholder="Name"
+						type="text"
+					)
+					+e.INPUT.form-control(
+						name="email"
+						placeholder="Email"
+						type="email"
+					)
+					+e.INPUT.form-control(
+						name="subject"
+						placeholder="Subject"
+						type="text"
+					)
+					+e.TEXTAREA.form-control(
+						name="message"
+						placeholder="Message"
+						rows="7"
+					)
+					+e.BUTTON.button.button_sm(type="submit") Send message

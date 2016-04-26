@@ -1,0 +1,100 @@
+.keep-in-touch
+	@extends .article
+	padding-top 146px
+	padding-bottom 152px
+	font-family $OpenSans
+	background-color #f4f5f9
+
+.keep-in-touch__container
+	lost-clearfix()
+	margin-x(10px)
+
+	+above('lg')
+		margin-x(0)
+		lost-center(1170px)
+
+.keep-in-touch__header
+	@extends .article__header
+	letter-spacing normal
+
+.keep-in-touch__post-header
+	@extends .article__post-header
+	margin-bottom 70px
+	padding-top 15px
+	padding-bottom 24px
+	letter-spacing normal
+
+.keep-in-touch__contacts
+	lost-center(350px)
+	padding 20px
+	height 565px
+	text-align left
+	background-color #fff
+	box-shadow 0 3px 5px 0 rgba(0, 0, 0, .1)
+
+	+above('md')
+		lost-column(2/5 3)
+		max-width none
+
+	+above('xl')
+		margin-right 30px
+		padding-top 32px
+		padding-left 88px
+		float left
+		width 475px
+
+.keep-in-touch__contacts-header
+	padding-top 63px
+	font-family $SourceSansPro
+	font-size 24px
+	font-weight 600
+	color $highlight-color
+	text-transform uppercase
+
+.keep-in-touch__contacts-p
+	padding-top 19px
+	font-size 18px
+	line-height 24px
+
+	a
+		text-decoration none
+		color inherit
+
+.keep-in-touch__send-mail
+	margin-top 30px
+	padding 20px
+	padding-top 69px
+	height 565px
+	text-align left
+	background-color #fff
+	box-shadow 0 5px 5px 0 rgba(0, 0, 0, .1)
+
+	+above('md')
+		margin 0
+		lost-column(3/5 3)
+
+	+above('xl')
+		padding-right 99px
+		padding-left 101px
+		float right
+		width 665px
+
+.keep-in-touch__form-control
+	margin-y(20px)
+	padding-top 6px
+	padding-bottom 16px
+	display block
+	width 100%
+	font-size 14px
+	font-weight 600
+	color $dark-color
+	border none
+	border-bottom 1px solid #e5e5e5
+	outline none
+
+	&:focus
+		color #000
+
+.keep-in-touch__button
+	margin-top 8px
+	margin-left 1px
