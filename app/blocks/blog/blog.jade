@@ -1,0 +1,11 @@
+include ../blog-article/blog-article
+
+mixin blog()
+	+b.ARTICLE.blog#blog&attributes(attributes)
+		header
+			+e.H2.header Our blog
+			+e.P.post-header Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.
+		+e.articles
+			- var n = 1;
+			while n <= 4
+				+blog-article('article-' + n++, 'jpg').__article

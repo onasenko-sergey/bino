@@ -1,0 +1,23 @@
+.blog
+	@extends .article
+	padding-top 115px
+	background-color #f4f5f9
+
+.blog__header
+	@extends .article__header
+	letter-spacing normal
+
+.blog__post-header
+	@extends .article__post-header
+	padding-top 17px
+	padding-bottom 23px
+	letter-spacing normal
+
+.blog__articles
+	lost-clearfix()
+	margin-top 71px
+	background-color $highlight-color
+
+.blog__article
+	+above('lg')
+		lost-column(1/2 2 0)

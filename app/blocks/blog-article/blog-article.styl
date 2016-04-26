@@ -1,0 +1,121 @@
+.blog-article
+	lost-clearfix()
+	font-family $OpenSans
+	text-align left
+	color #fff
+	background-color $highlight-color
+
+	&:nth-child(n+3)
+		+above('lg')
+			.blog-article__img-wrap
+				margin-right 0
+				margin-left 48px
+				float right
+
+				&:after
+					right auto
+					left 0
+					border-left 27px solid $highlight-color
+					border-right none
+
+.blog-article__img-wrap
+	position relative
+	margin-x(auto)
+	margin-top 48px
+	overflow hidden
+	max-width 220px
+	height 100px
+	line-height 0
+	text-align center
+
+	&:after
+		position absolute
+		left 50%
+		bottom 0
+		margin-left -35px
+		content ''
+		border-left 32px solid transparent
+		border-right 37px solid transparent
+		border-bottom 27px solid $highlight-color
+
+	+above('sm')
+		margin-right 48px
+		margin-left 48px
+		float left
+		max-width 25%
+		height auto
+
+		&:after
+			top 50%
+			right 0
+			bottom auto
+			margin-top -35px
+			margin-left 0
+			border-top 32px solid transparent
+			border-left none
+			border-right 27px solid $highlight-color
+			border-bottom 37px solid transparent
+
+	+above('xl')
+		margin-top 0
+		margin-right 48px
+		margin-left 0
+		max-width 50%
+
+.blog-article__img
+	margin-top -55px
+	max-width 220px
+	height 220px
+
+	+above('sm')
+		margin-top 0
+		max-width 100%
+		height inherit
+
+.blog-article__container
+	padding-x(10px)
+
+	+above('xl')
+		padding-x(48px)
+
+.blog-article__header-wrap
+	display inline-block
+
+.blog-article__pre-header
+	padding-top 71px
+	font-size 13px
+	letter-spacing .08em
+
+.blog-article__header
+	position relative
+	margin-top 27px
+	padding-bottom 19px
+	display inline-block
+	font-family $SourceSansPro
+	font-size 24px
+	letter-spacing .065em
+	text-transform uppercase
+
+	&:after
+		position absolute
+		left 0
+		bottom 0
+		width 44px
+		height 3px
+		content ''
+		background-color #fff
+
+.blog-article__p
+	padding-top 40px
+	line-height 30px
+
+.blog-article__link
+	margin-top 49px
+	margin-bottom 20px
+	display inline-block
+	font-style italic
+	letter-spacing .065em
+	text-transform capitalize
+
+	.fa
+		margin-left 6px
