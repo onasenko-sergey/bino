@@ -1,0 +1,17 @@
+include ../lazy-img/lazy-img
+
+mixin integrations()
+	+b.ARTICLE.integrations&attributes(attributes)
+		+e.container
+			header
+				+e.H2.header Great integrations with others
+				+e.P.post-header Suspendisse sed eros mollis, tincidunt felis eget, interdum erat.<br/> Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.
+			+e.UL.companies
+				- var n = 1
+				while n <= 10
+					+e.company
+						+lazy-img(
+							alt='partners company'
+							data-src='companies/company-' + n + '.png'
+							data-src-retina='companies/company-' + n++ + '@2x.png'
+						).__company-logo
