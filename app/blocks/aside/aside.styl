@@ -1,0 +1,45 @@
+.aside
+	padding-x(10px)
+	padding-top 145px
+	padding-bottom 125px
+	min-height 480px
+	font-family $OpenSans
+	text-align center
+	color #fff
+	background-size cover
+
+	&.bg-load-on
+	.no-js &
+		+below('xs')
+			retinaBackground(aside-bg-xs, jpg)
+
+		+above('sm')
+			retinaBackground(aside-bg-sm, jpg)
+
+		+above('md')
+			retinaBackground(aside-bg-md, jpg)
+
+		+above('lg')
+			retinaBackground(aside-bg-lg, jpg)
+
+.aside__header
+	font-size 36px
+	text-transform capitalize
+
+	+above('lg')
+		margin-left -28px
+
+
+.aside__b
+	font-weight 700
+
+.aside__p
+	padding-top 6px
+	font-size 18px
+	line-height 36px
+
+	+above('lg')
+		margin-left -28px
+
+.aside__button
+	margin-top 62px
