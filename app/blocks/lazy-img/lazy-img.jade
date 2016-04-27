@@ -1,10 +1,6 @@
 mixin lazy-img()
-	+b.IMG.lazy-img(
-		alt='#{attributes["alt"]}'
-		class='#{attributes["class"]}'
-		data-src='assets/images/#{attributes["data-src"]}|assets/images/#{attributes["data-src-retina"]}'
-		src='assets/images/load.gif'
-	)
+	-var props = {'alt': attributes['alt'], 'class': attributes['class'], 'data-src': 'assets/images/' + attributes['data-src'] + '|assets/images/' + attributes['data-src-retina'], 'src': 'assets/images/load.svg', 'width': attributes['width'] ? attributes["width"] : false, 'height': attributes['height'] ? attributes["height"] : false};
+	+b.IMG.lazy-img&attributes(props)
 	noscript
 		+b.IMG(
 			alt='#{attributes["alt"]}'
