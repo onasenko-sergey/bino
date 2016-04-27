@@ -10,8 +10,6 @@ head
 	meta(name='format-detection' content='telephone=no')
 	meta(name='format-detection' content='address=no')
 
-	meta(name='google' value='notranslate')
-
 	meta(name='theme-color' content='#ffffff')
 
 	meta(name='apple-mobile-web-app-capable' content='yes')
@@ -52,6 +50,7 @@ head
 	meta(name='keywords' content=pageKeywords || '')
 
 	link(href='assets/styles/inline.min.css' rel='stylesheet' inline)
-	link(href='assets/styles/app.min.css?t=' + timestamp rel='stylesheet')
+	noscript
+		link(href='assets/styles/app.min.css?t=' + timestamp rel='stylesheet')
 
 	script(src='assets/scripts/modernizr-custom.js' inline)
