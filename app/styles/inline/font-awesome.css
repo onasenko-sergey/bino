@@ -20,7 +20,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 /* makes the font 33% larger relative to the icon container */
-.fa-lg {
+/*.fa-lg {
   font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
@@ -76,7 +76,7 @@
 .fa.fa-pull-right {
   margin-left: .3em;
 }
-/* Deprecated as of 4.4.0 */
+!* Deprecated as of 4.4.0 *!
 .pull-right {
   float: right;
 }
@@ -177,9 +177,10 @@
 }
 .fa-inverse {
   color: #ffffff;
-}
+}*/
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+/*
 .fa-glass:before {
   content: "\f000";
 }
@@ -525,11 +526,11 @@
 }
 .fa-magnet:before {
   content: "\f076";
-}
+}*/
 .fa-chevron-up:before {
   content: "\f077";
 }
-.fa-chevron-down:before {
+/*.fa-chevron-down:before {
   content: "\f078";
 }
 .fa-retweet:before {
@@ -623,15 +624,15 @@
 }
 .fa-phone-square:before {
   content: "\f098";
-}
+}*/
 .fa-twitter:before {
   content: "\f099";
 }
-.fa-facebook-f:before,
+/*.fa-facebook-f:before,*/
 .fa-facebook:before {
   content: "\f09a";
 }
-.fa-github:before {
+/*.fa-github:before {
   content: "\f09b";
 }
 .fa-unlock:before {
@@ -640,11 +641,11 @@
 .fa-credit-card:before {
   content: "\f09d";
 }
-.fa-feed:before,
+.fa-feed:before,*/
 .fa-rss:before {
   content: "\f09e";
 }
-.fa-hdd-o:before {
+/*.fa-hdd-o:before {
   content: "\f0a0";
 }
 .fa-bullhorn:before {
@@ -800,11 +801,11 @@
 }
 .fa-envelope:before {
   content: "\f0e0";
-}
+}*/
 .fa-linkedin:before {
   content: "\f0e1";
 }
-.fa-rotate-left:before,
+/*.fa-rotate-left:before,
 .fa-undo:before {
   content: "\f0e2";
 }
@@ -895,23 +896,23 @@
 }
 .fa-angle-double-left:before {
   content: "\f100";
-}
+}*/
 .fa-angle-double-right:before {
   content: "\f101";
 }
-.fa-angle-double-up:before {
+/*.fa-angle-double-up:before {
   content: "\f102";
 }
 .fa-angle-double-down:before {
   content: "\f103";
-}
+}*/
 .fa-angle-left:before {
   content: "\f104";
 }
 .fa-angle-right:before {
   content: "\f105";
 }
-.fa-angle-up:before {
+/*.fa-angle-up:before {
   content: "\f106";
 }
 .fa-angle-down:before {
@@ -1229,11 +1230,11 @@
 }
 .fa-bitbucket-square:before {
   content: "\f172";
-}
+}*/
 .fa-tumblr:before {
   content: "\f173";
 }
-.fa-tumblr-square:before {
+/*.fa-tumblr-square:before {
   content: "\f174";
 }
 .fa-long-arrow-down:before {
@@ -1262,11 +1263,11 @@
 }
 .fa-dribbble:before {
   content: "\f17d";
-}
+}*/
 .fa-skype:before {
   content: "\f17e";
 }
-.fa-foursquare:before {
+/*.fa-foursquare:before {
   content: "\f180";
 }
 .fa-trello:before {
@@ -2014,11 +2015,11 @@
 }
 .fa-houzz:before {
   content: "\f27c";
-}
+}*/
 .fa-vimeo:before {
   content: "\f27d";
 }
-.fa-black-tie:before {
+/*.fa-black-tie:before {
   content: "\f27e";
 }
 .fa-fonticons:before {
@@ -2084,3 +2085,4 @@
 .fa-percent:before {
   content: "\f295";
 }
+*/
