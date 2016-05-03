@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!--[if IE]><html lang="ru" class="no-js ie"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ru" class="no-js not-ie">
+	<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="imagetoolbar" content="no">
+		<meta name="msthemecompatible" content="no">
+		<meta name="cleartype" content="on">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="format-detection" content="address=no">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link sizes="57x57" href="apple-touch-icon-57x57.png" rel="apple-touch-icon">
+		<link sizes="114x114" href="apple-touch-icon-114x114.png" rel="apple-touch-icon">
+		<link sizes="72x72" href="apple-touch-icon-72x72.png" rel="apple-touch-icon">
+		<link sizes="144x144" href="apple-touch-icon-144x144.png" rel="apple-touch-icon">
+		<link sizes="60x60" href="apple-touch-icon-60x60.png" rel="apple-touch-icon">
+		<link sizes="120x120" href="apple-touch-icon-120x120.png" rel="apple-touch-icon">
+		<link sizes="76x76" href="apple-touch-icon-76x76.png" rel="apple-touch-icon">
+		<link sizes="152x152" href="apple-touch-icon-152x152.png" rel="apple-touch-icon">
+		<link sizes="180x180" href="apple-touch-icon-180x180.png" rel="apple-touch-icon">
+		<link sizes="192x192" href="favicon-192x192.png" rel="icon" type="image/png">
+		<link sizes="160x160" href="favicon-160x160.png" rel="icon" type="image/png">
+		<link sizes="96x96" href="favicon-96x96.png" rel="icon" type="image/png">
+		<link sizes="16x16" href="favicon-16x16.png" rel="icon" type="image/png">
+		<link sizes="32x32" href="favicon-32x32.png" rel="icon" type="image/png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="application-name" content="">
+		<meta name="msapplication-tooltip" content="">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="mstile-large.png">
+		<meta name="msapplication-starturl" content="http://onasenko-sergey.github.io/bino/">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="msapplication-square70x70logo" content="mstile-small.png">
+		<meta name="msapplication-square150x150logo" content="mstile-medium.png">
+		<meta name="msapplication-wide310x150logo" content="mstile-wide.png">
+		<meta name="msapplication-square310x310logo" content="mstile-large.png">
+		<title>Bino</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<style>*{margin:0;padding:0;font:inherit;box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-focus-ring-color:hsla(0,0%,100%,0);cursor:default}body{font-size:100%;line-height:1;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}a{background:0 0}:active,:focus,:hover{outline:none}hr{box-sizing:content-box;height:0}ol,ul{list-style:none}pre{-moz-tab-size:4;tab-size:4;white-space:pre-wrap}q{quotes:'\201C' '\201D' '\2018' '\2019'}img{border:none}svg:not(:root){overflow:hidden}button,input{line-height:normal}button,select{text-transform:none}button{overflow:visible}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:none;padding:0}textarea{overflow:auto;vertical-align:top}button,input,select[multiple],textarea{background-image:none}input,select,textarea{border-radius:0;box-shadow:none}input,textarea{resize:none;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text}[placeholder]:focus::-webkit-input-placeholder{color:transparent}[placeholder]:focus::-moz-placeholder{color:transparent}[placeholder]:focus:-ms-input-placeholder{color:transparent}[placeholder]:focus::placeholder{color:transparent}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:FontAwesome;src:url(assets/fonts/fontawesome-webfont.eot?v=4.5.0);src:url(assets/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0) format('embedded-opentype'),url(assets/fonts/fontawesome-webfont.woff2?v=4.5.0) format('woff2'),url(assets/fonts/fontawesome-webfont.woff?v=4.5.0) format('woff'),url(assets/fonts/fontawesome-webfont.ttf?v=4.5.0) format('truetype'),url(assets/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-chevron-up:before{content:"\f077"}.fa-twitter:before{content:"\f099"}.fa-facebook:before{content:"\f09a"}.fa-rss:before{content:"\f09e"}.fa-linkedin:before{content:"\f0e1"}.fa-angle-double-right:before{content:"\f101"}.fa-angle-left:before{content:"\f104"}.fa-angle-right:before{content:"\f105"}.fa-tumblr:before{content:"\f173"}.fa-skype:before{content:"\f17e"}.fa-vimeo:before{content:"\f27d"}@font-face{font-family:Open Sans;src:url(assets/fonts/opensans-bold.eot);src:url(assets/fonts/opensans-bold.eot?#iefix) format('embedded-opentype'),url(assets/fonts/opensans-bold.woff2) format('woff2'),url(assets/fonts/opensans-bold.woff) format('woff'),url(assets/fonts/opensans-bold.ttf) format('truetype'),url(assets/fonts/opensans-bold.svg#open_sansbold) format('svg');font-weight:700;font-style:normal}@font-face{font-family:Open Sans;src:url(assets/fonts/opensans-light.eot);src:url(assets/fonts/opensans-light.eot?#iefix) format('embedded-opentype'),url(assets/fonts/opensans-light.woff2) format('woff2'),url(assets/fonts/opensans-light.woff) format('woff'),url(assets/fonts/opensans-light.ttf) format('truetype'),url(assets/fonts/opensans-light.svg#open_sanslight) format('svg');font-weight:300;font-style:normal}@font-face{font-family:Open Sans;src:url(assets/fonts/opensans-regular.eot);src:url(assets/fonts/opensans-regular.eot?#iefix) format('embedded-opentype'),url(assets/fonts/opensans-regular.woff2) format('woff2'),url(assets/fonts/opensans-regular.woff) format('woff'),url(assets/fonts/opensans-regular.ttf) format('truetype'),url(assets/fonts/opensans-regular.svg#open_sansregular) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Open Sans;src:url(assets/fonts/opensans-semibold.eot);src:url(assets/fonts/opensans-semibold.eot?#iefix) format('embedded-opentype'),url(assets/fonts/opensans-semibold.woff2) format('woff2'),url(assets/fonts/opensans-semibold.woff) format('woff'),url(assets/fonts/opensans-semibold.ttf) format('truetype'),url(assets/fonts/opensans-semibold.svg#open_sanssemibold) format('svg');font-weight:600;font-style:normal}@font-face{font-family:Source Sans Pro;src:url(assets/fonts/sourcesanspro-regular.eot);src:url(assets/fonts/sourcesanspro-regular.eot?#iefix) format('embedded-opentype'),url(assets/fonts/sourcesanspro-regular.woff2) format('woff2'),url(assets/fonts/sourcesanspro-regular.woff) format('woff'),url(assets/fonts/sourcesanspro-regular.ttf) format('truetype'),url(assets/fonts/sourcesanspro-regular.svg#source_sans_proregular) format('svg');font-weight:400;font-style:normal}@font-face{font-family:Source Sans Pro;src:url(assets/fonts/sourcesanspro-light.eot);src:url(assets/fonts/sourcesanspro-light.eot?#iefix) format('embedded-opentype'),url(assets/fonts/sourcesanspro-light.woff2) format('woff2'),url(assets/fonts/sourcesanspro-light.woff) format('woff'),url(assets/fonts/sourcesanspro-light.ttf) format('truetype'),url(assets/fonts/sourcesanspro-light.svg#source_sans_prolight) format('svg');font-weight:300;font-style:normal}.btn,.button{display:inline-block;margin-bottom:0;font-weight:700;text-align:center;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;white-space:nowrap;padding:6px 12px;font-size:14px;line-height:1.428571429;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn.active.focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn:active:focus,.btn:focus,.button.active.focus,.button.active:focus,.button.focus,.button:active.focus,.button:active:focus,.button:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn.focus,.btn:focus,.btn:hover,.button.focus,.button:focus,.button:hover{color:#333;text-decoration:none}.btn.active,.btn:active{background-image:none}.btn.active,.btn:active,.button.active,.button:active{outline:0;box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn.disabled,.btn[disabled],.button.disabled,.button[disabled],fieldset[disabled] .btn,fieldset[disabled] .button{cursor:not-allowed;opacity:.65;filter:alpha(opacity=65);box-shadow:none}a.btn.disabled,a.button.disabled,fieldset[disabled] a.btn,fieldset[disabled] a.button{pointer-events:none}.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive{display:block;max-width:100%;height:auto}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}[role=button]{cursor:pointer}.carousel,.carousel-inner{position:relative}.carousel-inner{overflow:hidden;width:100%}.carousel-inner>.item{display:none;position:relative;transition:.6s ease-in-out left}.carousel-inner>.item>a>img,.carousel-inner>.item>img{line-height:1}.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}.carousel-inner>.active{left:0}.carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}.carousel-inner>.next{left:100%}.carousel-inner>.prev{left:-100%}.carousel-inner>.next.left,.carousel-inner>.prev.right{left:0}.carousel-inner>.active.left{left:-100%}.carousel-inner>.active.right{left:100%}.carousel-control{position:absolute;top:0;left:0;bottom:0;width:7.5%;opacity:.5;filter:alpha(opacity=50);font-size:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.6);background-color:transparent}.carousel-control.right{left:auto;right:0}.carousel-control:focus,.carousel-control:hover{outline:0;color:#fff;text-decoration:none;opacity:.9;filter:alpha(opacity=90)}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav:after,.nav:before{content:" ";display:table}.nav:after{clear:both}.nav>li,.nav>li>a{position:relative;display:block}.nav>li>a{padding:0}.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:#eee}.navbar{position:relative;min-height:55px;margin-bottom:20px;border:1px solid transparent}.navbar:after,.navbar:before{content:" ";display:table}.navbar:after{clear:both}.navbar-header:after,.navbar-header:before{content:" ";display:table}.navbar-header:after{clear:both}.navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;box-shadow:inset 0 1px 0 hsla(0,0%,100%,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{content:" ";display:table}.navbar-collapse:after{clear:both}.navbar-collapse.in{overflow-y:auto}.navbar-brand{float:left;padding:17.5px 15px;font-size:18px;line-height:20px;height:55px}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}.navbar-brand>img{display:block}.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:10.5px;margin-bottom:10.5px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle:focus{outline:0}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}.navbar-nav{margin:8.75px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}.navbar-default{background-color:transparent;border-color:transparent}.navbar-default .navbar-brand{color:#fff}.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover{color:#fff;background-color:transparent}.navbar-default .navbar-nav>li>a,.navbar-default .navbar-text{color:#f4f5f9}.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{color:#e74c3c;background-color:transparent}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{color:#f4f5f9;background-color:transparent}.navbar-default .navbar-nav>.disabled>a,.navbar-default .navbar-nav>.disabled>a:focus,.navbar-default .navbar-nav>.disabled>a:hover{color:#ccc;background-color:transparent}.navbar-default .navbar-toggle{border-color:#fff}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#e74c3c}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:transparent}.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{background-color:transparent;color:#f4f5f9}.fade{opacity:0;transition:opacity .15s linear}.fade.in{opacity:1}.collapse{display:none}.collapse.in{display:block}tr.collapse.in{display:table-row}tbody.collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;transition-property:height,visibility;transition-duration:.35s;transition-timing-function:ease}.button{color:#fff;background-color:#e74c3c;border-color:#e74c3c;font-family:Open Sans,sans-serif;text-transform:uppercase}.button.focus,.button:focus{color:#fff;background-color:#d62c1a;border-color:#921e12}.button.active,.button:active,.button:hover,.open>.dropdown-toggle.button{color:#fff;background-color:#d62c1a;border-color:#cd2a19}.button.active.focus,.button.active:focus,.button.active:hover,.button:active.focus,.button:active:focus,.button:active:hover,.open>.dropdown-toggle.button.focus,.open>.dropdown-toggle.button:focus,.open>.dropdown-toggle.button:hover{color:#fff;background-color:#b62516;border-color:#921e12}.button.active,.button:active,.open>.dropdown-toggle.button{background-image:none}.button.disabled.focus,.button.disabled:focus,.button.disabled:hover,.button[disabled].focus,.button[disabled]:focus,.button[disabled]:hover,fieldset[disabled] .button.focus,fieldset[disabled] .button:focus,fieldset[disabled] .button:hover{background-color:#e74c3c;border-color:#e74c3c}.button .badge{color:#e74c3c;background-color:#fff}.button_aside{margin-left:13px}.button_aside,.button_history,.button_ws{margin-right:13px;margin-bottom:13px;display:block}.button_ws{margin-left:13px}.button_ws_transp{color:#fff;background-color:transparent;border-color:#fff}.button_ws_transp.focus,.button_ws_transp:focus{color:#fff;background-color:transparent;border-color:#bfbfbf}.button_ws_transp.active,.button_ws_transp:active,.button_ws_transp:hover,.open>.dropdown-toggle.button_ws_transp{color:#fff;background-color:transparent;border-color:#e0e0e0}.button_ws_transp.active.focus,.button_ws_transp.active:focus,.button_ws_transp.active:hover,.button_ws_transp:active.focus,.button_ws_transp:active:focus,.button_ws_transp:active:hover,.open>.dropdown-toggle.button_ws_transp.focus,.open>.dropdown-toggle.button_ws_transp:focus,.open>.dropdown-toggle.button_ws_transp:hover{color:#fff;background-color:transparent;border-color:#bfbfbf}.button_ws_transp.active,.button_ws_transp:active,.open>.dropdown-toggle.button_ws_transp{background-image:none}.button_ws_transp.disabled.focus,.button_ws_transp.disabled:focus,.button_ws_transp.disabled:hover,.button_ws_transp[disabled].focus,.button_ws_transp[disabled]:focus,.button_ws_transp[disabled]:hover,fieldset[disabled] .button_ws_transp.focus,fieldset[disabled] .button_ws_transp:focus,fieldset[disabled] .button_ws_transp:hover{background-color:transparent;border-color:#fff}.button_ws_transp .badge{color:transparent;background-color:#fff}.button_history{margin-left:0;box-shadow:0 2px 4.75px .25px rgba(0,0,0,.25)}.button_aside{letter-spacing:.03em}.button_cs,.button_pc{padding:16px 20px;font-size:12px;margin-left:2px;width:145px;box-shadow:0 2px 4.75px .25px rgba(0,0,0,.25)}.button_cs,.button_pc,.button_sm{line-height:1em;border-radius:2px}.button_sm{padding:14px 20px;font-size:14px;width:157px}.header{position:relative;background-color:#3b3c41;background-size:cover}.header:after,.header:before{position:absolute;left:50%;content:''}.header:before{z-index:9;bottom:-37px;margin-left:-37px;width:64px;height:64px;background-color:#f4f5f9;background-clip:padding-box;border:5px solid hsla(0,0%,100%,.25);border-radius:50%}.header:after{background-image:url(assets/images/sprites/icons.png);background-position:-84px 0;width:32px;height:32px;z-index:10;bottom:-16px;margin-left:-16px}@-webkit-keyframes a{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes a{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@-webkit-keyframes b{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes b{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.welcome-slider{position:relative;padding-top:calc(132px + 10%);padding-bottom:calc(66px + 5%)}.welcome-slider__control{margin-top:100px}.welcome-slider__control:hover .fa{color:#fff;background-color:#e74c3c;opacity:1}.welcome-slider__control .fa{position:absolute;top:360px;left:0;margin-top:-15px;padding-top:4px;padding-bottom:6px;width:100%;color:#303030;background-color:#fff}.welcome-slider__control.left,.welcome-slider__control.right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-delay:.5s;animation-delay:.5s;-webkit-animation-fill-mode:backwards;animation-fill-mode:backwards}.welcome-slider__control.left{-webkit-animation-name:a;animation-name:a}.welcome-slider__control.right{-webkit-animation-name:b;animation-name:b}.ws-slide{padding-left:7.5%;padding-right:7.5%;min-height:500px;font-family:Open Sans,sans-serif;text-align:center;color:#f4f5f9}.ws-slide__headline{padding-bottom:20px;font-family:Source Sans Pro,sans-serif;font-size:24px;letter-spacing:.05em}.ws-slide__header,h1{position:relative;margin-bottom:41px;padding-top:15px;padding-left:9px;padding-bottom:42px;font-size:calc(32px + 39 * ((100vw - 320px)/672));font-weight:700;letter-spacing:.115em;text-transform:uppercase}.ws-slide__header:after,.ws-slide__header:before,h1:after,h1:before{position:absolute;left:50%;content:''}.ws-slide__header:before,h1:before{bottom:0;margin-left:-98px;width:80px;height:1px;background-color:#fff;box-shadow:116px 0 0 0 #fff}.ws-slide__header:after,h1:after{bottom:-3px;margin-left:-4px;width:7px;height:7px;background-color:#e74c3c;border-radius:50%}.ws-slide__p{*zoom:1;max-width:600px;margin-left:auto;margin-right:auto;margin-bottom:10px;font-size:16px;line-height:24px;color:#cbc6c0}.ws-slide__p:after,.ws-slide__p:before{content:'';display:table}.ws-slide__p:after{clear:both}.ws-slide__buttons{margin-top:64px}.logo{padding:11px 10px 11px 0;display:inline-block;font-family:Open Sans,sans-serif;font-size:36px;font-weight:300;line-height:24px;text-transform:uppercase;letter-spacing:.03em;color:#fff;border:3px solid #fff}.logo,.logo:active,.logo:focus,.logo:hover{text-decoration:none}.logo:first-letter{margin-right:10px;margin-left:-2px;padding:0 13px;font-weight:700;color:#31353f;background-color:#fff}.logo:hover:first-letter{color:#e74c3c}.nav-link{margin-left:58px;margin-right:58px;padding-right:24px;font-family:Open Sans,sans-serif;font-size:14px;text-align:right;text-transform:uppercase;letter-spacing:.006em}.nav-link.active{border-bottom:1px solid #e74c3c}.nav-link__a{text-decoration:none}@-webkit-keyframes c{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes c{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.navigation{position:absolute;top:0;right:0;left:0;background-color:#202020;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-delay:.5s;animation-delay:.5s;-webkit-animation-fill-mode:backwards;animation-fill-mode:backwards;-webkit-animation-name:c;animation-name:c}.navigation.affix{position:fixed;z-index:50;padding-top:0;padding-bottom:0;background-color:#202020}.navigation__navbar{margin-bottom:3px;background-color:#202020}.navigation__toggle.collapsed,.navigation__toggle.collapsed:active,.navigation__toggle.collapsed:focus{background-color:transparent}.navigation__toggle.collapsed:hover{background-color:#e74c3c}.navigation__logo{margin-left:-2px;padding-top:3px}.navigation__links{margin-right:0}.page{overflow-x:hidden}.main{position:relative;margin-top:4px}.main:after,.main:before{position:absolute;top:-121px;width:50%;height:121px;content:'';background-repeat:no-repeat;background-size:100% 100%}.main:before{left:0;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%271.1%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27%20viewBox%3D%270%200%20960%20121%27%20preserveAspectRatio%3D%27xMaxYMax%27%3E%3Cstyle%20type%3D%27text%2Fcss%27%3E.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Cpolygon%20class%3D%27st0%27%20points%3D%270%2C121%200%2C0%20960%2C121%27%2F%3E%3C%2Fsvg%3E");background-position:0 100%}.main:after{right:0;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20version%3D%271.1%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20xmlns%3Axlink%3D%27http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%27%20viewBox%3D%270%200%20960%20121%27%20preserveAspectRatio%3D%27xMinYMax%27%3E%3Cstyle%20type%3D%27text%2Fcss%27%3E.st0%7Bfill%3A%23FFF%3B%7D%3C%2Fstyle%3E%3Cpolygon%20class%3D%27st0%27%20points%3D%270%2C121%20960%2C0%20960%2C121%27%2F%3E%3C%2Fsvg%3E");background-position:100% 100%}.who-we-are__container{*zoom:1;padding:50px 10px 30px}.who-we-are__container:before{content:'';display:table}.who-we-are__container:after{content:'';display:table;clear:both}.who-we-are__col{position:relative;padding-top:130px;padding-bottom:30px;font-family:Source Sans Pro,sans-serif;font-size:12px;font-weight:300;line-height:20px;text-align:center;letter-spacing:1.2px;color:#999}.who-we-are__col:after,.who-we-are__col:before{position:absolute;left:50%;content:''}.who-we-are__col:before{top:30px;margin-left:-37px;width:71px;height:71px;border:1px solid #e5e5e5;transition:.5s}.who-we-are__col:after{top:53px;margin-left:-16px}.who-we-are__col.sleek-design:after{background-position:-124px -80px}.who-we-are__col.clean-code:after,.who-we-are__col.sleek-design:after{background-image:url(assets/images/sprites/icons.png);width:32px;height:32px}.who-we-are__col.clean-code:after{background-position:0 -44px}.who-we-are__col.creative-ideas:after{background-image:url(assets/images/sprites/icons.png);background-position:-40px -44px;width:32px;height:32px}.who-we-are__col.free-support:after{background-image:url(assets/images/sprites/icons.png);background-position:-44px 0;width:32px;height:32px}.who-we-are__col:hover:before{border-color:#e74c3c;-webkit-transform:rotate(45deg)scale(.85);transform:rotate(45deg)scale(.85);transition:.3s}.who-we-are__col:hover .who-we-are__header{color:#e74c3c;transition:.3s}.who-we-are__header{position:relative;margin-bottom:32px;font-family:Open Sans,sans-serif;font-size:18px;font-weight:600;letter-spacing:.1em;color:#6a6a6a;text-transform:uppercase;transition:.5s}.who-we-are__header:after{position:absolute;left:50%;bottom:-19px;margin-left:-20px;width:40px;height:1px;content:'';background-color:#888;border-bottom:1px solid #e1e1e1}.who-we-are__p{*zoom:1;max-width:250px;margin-left:auto;margin-right:auto}.who-we-are__p:after,.who-we-are__p:before{content:'';display:table}.who-we-are__p:after{clear:both}@media only screen and (min-width:480px){.button_aside,.button_history,.button_ws{display:inline-block;min-width:200px}.header{background-image:url(assets/images/ws-bg-sm.jpg)}.welcome-slider__control .fa{left:50%;margin-left:-12px;padding-left:10px;padding-right:10px;width:auto}}@media only screen and (min-width:480px) and (-webkit-min-device-pixel-ratio:2),only screen and (min-width:480px) and (min-resolution:192dpi){.header{background-image:url(assets/images/ws-bg-sm@2x.jpg)}}@media only screen and (min-width:768px){.button_aside,.button_history,.button_ws{padding:20px;font-size:14px;line-height:1em;border-radius:2px;width:225px}.button_ws_transp{padding-top:18px;padding-bottom:18px}.header{background-image:url(assets/images/ws-bg-md.jpg)}.welcome-slider__control .fa{margin-top:-23px;margin-left:-23px;padding-left:16px;padding-right:16px;font-size:35px}.ws-slide__p{padding-left:0;padding-right:0;font-size:14px}.who-we-are__col{width:calc(99.99% * .5 - 15px)}.who-we-are__col:nth-child(1n){float:left;margin-right:30px;clear:none}.who-we-are__col:last-child{margin-right:0}.who-we-are__col:nth-child(2n){margin-right:0;float:right}.who-we-are__col:nth-child(2n+1){clear:left}}@media only screen and (min-width:768px) and (-webkit-min-device-pixel-ratio:2),only screen and (min-width:768px) and (min-resolution:192dpi){.header{background-image:url(assets/images/ws-bg-md@2x.jpg)}}@media (min-width:992px){.navbar{border-radius:4px}.navbar-header{float:left}.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-collapse.in{overflow-y:visible}.navbar>.container-fluid .navbar-brand,.navbar>.container .navbar-brand{margin-left:-15px}.navbar-toggle{display:none}.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:17.5px;padding-bottom:17.5px}.navbar-left{float:left!important}.navbar-right{float:right!important;margin-right:-15px}.navbar-right~.navbar-right{margin-right:0}}@media only screen and (min-width:992px){.ws-slide{padding-left:0;padding-right:0;*zoom:1;max-width:900px;margin-left:auto;margin-right:auto}.ws-slide:after,.ws-slide:before{content:'';display:table}.ws-slide:after{clear:both}.ws-slide__headline{margin-left:-4px}.ws-slide__buttons{margin-left:-2px}.nav-link{margin-right:0;padding-right:0;text-align:left}.navigation{padding-top:36px;padding-bottom:18px;background-color:transparent}.navigation__navbar{*zoom:1;max-width:1170px;margin-left:auto;margin-right:auto;background-color:transparent}.navigation__navbar:before{content:'';display:table}.navigation__navbar:after{content:'';display:table;clear:both}.who-we-are__col{width:calc(99.99% * .25 - 22.5px)}.who-we-are__col:nth-child(1n){float:left;margin-right:30px;clear:none}.who-we-are__col:last-child{margin-right:0}.who-we-are__col:nth-child(undefinedn){margin-right:0;float:right}.who-we-are__col:nth-child(undefinedn+1){clear:left}}@media screen and (min-width:992px){.ws-slide__header,h1{font-size:71px}}@media only screen and (min-width:1200px){.header{background-image:url(assets/images/ws-bg-lg.jpg)}.navigation__logo{padding-left:0;padding-right:0}.navigation__links{margin-right:-15px}.who-we-are{*zoom:1;max-width:1170px;margin-left:auto;margin-right:auto}.who-we-are:after,.who-we-are:before{content:'';display:table}.who-we-are:after{clear:both}.who-we-are__container{margin-left:-9px;margin-right:-9px;padding:95px 0 78px}}@media only screen and (min-width:1200px) and (-webkit-min-device-pixel-ratio:2),only screen and (min-width:1200px) and (min-resolution:192dpi){.header{background-image:url(assets/images/ws-bg-lg@2x.jpg)}}@media (max-width:991px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}.navbar-nav .open .dropdown-menu .dropdown-header{padding:5px 15px 5px 25px}.navbar-nav .open .dropdown-menu>li>a{padding:5px 15px 5px 25px;line-height:20px}.navbar-nav .open .dropdown-menu>li>a:focus,.navbar-nav .open .dropdown-menu>li>a:hover{background-image:none}.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#f4f5f9}.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:#e74c3c;background-color:transparent}.navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{color:#f4f5f9;background-color:transparent}.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover{color:#ccc;background-color:transparent}}@media only screen and (max-width:480px){.header{background-image:url(assets/images/ws-bg-xs.jpg)}}@media only screen and (max-width:480px) and (-webkit-min-device-pixel-ratio:2),only screen and (max-width:480px) and (min-resolution:192dpi){.header{background-image:url(assets/images/ws-bg-xs@2x.jpg)}}@media screen and (max-width:320px){.ws-slide__header,h1{font-size:32px}}@media (-webkit-transform-3d),all and (transform-3d){.carousel-inner>.item{transition:transform .6s ease-in-out;transition:transform .6s ease-in-out,-webkit-transform .6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}.carousel-inner>.item.active.right,.carousel-inner>.item.next{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);left:0}.carousel-inner>.item.active.left,.carousel-inner>.item.prev{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);left:0}.carousel-inner>.item.active,.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right{-webkit-transform:translateZ(0);transform:translateZ(0);left:0}}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){.header:after,.who-we-are__col.clean-code:after,.who-we-are__col.creative-ideas:after,.who-we-are__col.free-support:after,.who-we-are__col.sleek-design:after{background-image:url(assets/images/sprites/icons@2x.png);background-size:156px 156px}}</style>
+		<noscript>
+			<link href="assets/styles/app.min.css?t=1462312125419" rel="stylesheet">
+		</noscript>
+		<script>!function(e,n,a){function s(e,n){return typeof e===n}function o(){var e,n,a,o,t,l,c;for(var u in r)if(r.hasOwnProperty(u)){if(e=[],n=r[u],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(a=0;a<n.options.aliases.length;a++)e.push(n.options.aliases[a].toLowerCase());for(o=s(n.fn,"function")?n.fn():n.fn,t=0;t<e.length;t++)l=e[t],c=l.split("."),1===c.length?f[c[0]]=o:(!f[c[0]]||f[c[0]]instanceof Boolean||(f[c[0]]=new Boolean(f[c[0]])),f[c[0]][c[1]]=o),i.push((o?"":"no-")+c.join("-"))}}function t(e){var n=u.className,a=f._config.classPrefix||"";if(p&&(n=n.baseVal),f._config.enableJSClass){var s=new RegExp("(^|\\s)"+a+"no-js(\\s|$)");n=n.replace(s,"$1"+a+"js$2")}f._config.enableClasses&&(n+=" "+a+e.join(" "+a),p?u.className.baseVal=n:u.className=n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):p?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}var i=[],r=[],c={_version:"3.3.1",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var a=this;setTimeout(function(){n(a[e])},0)},addTest:function(e,n,a){r.push({name:e,fn:n,options:a})},addAsyncTest:function(e){r.push({name:null,fn:e})}},f=function(){};f.prototype=c,f=new f;var u=n.documentElement,p="svg"===u.nodeName.toLowerCase();f.addTest("placeholder","placeholder"in l("input")&&"placeholder"in l("textarea")),o(),t(i),delete c.addTest,delete c.addAsyncTest;for(var d=0;d<f._q.length;d++)f._q[d]();e.Modernizr=f}(window,document);</script>
+	</head>
+
+	<body class="page">
+		<header class="header">
+			<div id="welcome-slider" class="welcome-slider carousel slide">
+				<div role="listbox" class="carousel-inner">
+					<div class="item active">
+						<div class="ws-slide">
+							<p class="ws-slide__headline">Our Clients Are Our First Priority</p>
+							<h1>Welcome to Bino</h1>
+							<p class="ws-slide__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+								book.</p>
+							<div class="ws-slide__buttons">
+								<a role="button" class="button button_ws">Get started now</a>
+								<a role="button" class="button button_ws button_ws_transp">Learn more</a>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="ws-slide">
+							<p class="ws-slide__headline">At next slide</p>
+							<p class="ws-slide__header">Learn about Bino</p>
+							<p class="ws-slide__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+								book.</p>
+							<p class="ws-slide__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+								dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+								book.</p>
+						</div>
+					</div>
+				</div>
+				<a data-slide="prev" href="#welcome-slider" role="button" class="welcome-slider__control carousel-control left">
+					<i aria-hidden="true" class="fa fa-angle-left"></i>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a data-slide="next" href="#welcome-slider" role="button" class="welcome-slider__control carousel-control right">
+					<i aria-hidden="true" class="fa fa-angle-right"></i>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div class="navigation">
+				<nav class="navigation__navbar navbar navbar-default">
+					<h2 class="sr-only">Site navigation</h2>
+					<div class="navbar-header">
+						<button aria-expanded="false" data-toggle="collapse" data-target="#main-nav" type="button" class="navigation__toggle navbar-toggle collapsed">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="#" class="navigation__logo navbar-brand">
+							<span class="logo">Bino</span>
+						</a>
+					</div>
+					<div id="main-nav" role="navigation" class="collapse navbar-collapse">
+						<ul class="navigation__links nav navbar-nav navbar-right">
+							<li class="nav-link active">
+								<a href="#" class="nav-link__a">Home</a>
+							</li>
+							<li class="nav-link">
+								<a href="#about-us" class="nav-link__a">About us</a>
+							</li>
+							<li class="nav-link">
+								<a href="#portfolio" class="nav-link__a">Portfolio</a>
+							</li>
+							<li class="nav-link">
+								<a href="#pricing" class="nav-link__a">Pricing</a>
+							</li>
+							<li class="nav-link">
+								<a href="#team" class="nav-link__a">Team</a>
+							</li>
+							<li class="nav-link">
+								<a href="#blog" class="nav-link__a">Blog</a>
+							</li>
+							<li class="nav-link">
+								<a href="#contact" class="nav-link__a">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="main">
+			<article id="about-us" class="about-us">
+				<h2 class="sr-only">About us</h2>
+				<section class="who-we-are">
+					<header class="sr-only">
+						<h3>Who we are</h3>
+					</header>
+					<div class="who-we-are__container">
+						<div class="who-we-are__col sleek-design">
+							<h4 class="who-we-are__header">Sleek design</h4>
+							<p class="who-we-are__p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+						</div>
+						<div class="who-we-are__col clean-code">
+							<h4 class="who-we-are__header">Clean code</h4>
+							<p class="who-we-are__p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+						</div>
+						<div class="who-we-are__col creative-ideas">
+							<h4 class="who-we-are__header">Creative ideas</h4>
+							<p class="who-we-are__p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+						</div>
+						<div class="who-we-are__col free-support">
+							<h4 class="who-we-are__header">Free support</h4>
+							<p class="who-we-are__p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
+						</div>
+					</div>
+				</section>
+				<section class="history">
+					<div class="history__container bg-load">
+						<div class="history__col">
+							<header>
+								<h3 class="history__header">Our history</h3>
+							</header>
+							<p class="history__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's standard
+								dummy text ever since the 1500s, when an unk&shy;nown printer took a galley of type and scrambled it to make a type
+								specimen book.</p>
+							<p class="history__p">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+								It was popularised in the 1960s with the release of Letraset sheets contain&shy;ing Lorem Ipsum passages, and more
+								recently with desktop publishing software like Aldus Page&shy;Maker including versions of Lorem Ipsum.</p>
+							<a role="button"
+								class="button button_history history__button">Browse our work</a>
+						</div>
+					</div>
+				</section>
+				<section class="services bg-load">
+					<div id="services-slider" class="services__slider carousel slide">
+						<div class="services__container">
+							<div class="services__content">
+								<header>
+									<h3 class="services__header">Our services</h3>
+								</header>
+								<div role="listbox" class="carousel-inner-vertical">
+									<div class="services__slide item active">
+										<ul class="services__services-list">
+											<li class="service photography">
+												<h4 class="service__header">Photography</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's
+													standard dummy text ever.</p>
+											</li>
+											<li class="service web-design">
+												<h4 class="service__header">Web design</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's
+													standard dummy text ever.</p>
+											</li>
+											<li class="service print-design">
+												<h4 class="service__header">Print design</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+												<p class="service__p">Lorem Ip sum has been the industry's standard dummy text ever.</p>
+											</li>
+										</ul>
+									</div>
+									<div class="services__slide item">
+										<ul class="services__services-list">
+											<li class="service web-design">
+												<h4 class="service__header">Web design</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's
+													standard dummy text ever.</p>
+											</li>
+											<li class="service print-design">
+												<h4 class="service__header">Print design</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+												<p class="service__p">Lorem Ip sum has been the industry's standard dummy text ever.</p>
+											</li>
+											<li class="service photography">
+												<h4 class="service__header">Photography</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's
+													standard dummy text ever.</p>
+											</li>
+										</ul>
+									</div>
+									<div class="services__slide item">
+										<ul class="services__services-list">
+											<li class="service print-design">
+												<h4 class="service__header">Print design</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+												<p class="service__p">Lorem Ip sum has been the industry's standard dummy text ever.</p>
+											</li>
+											<li class="service photography">
+												<h4 class="service__header">Photography</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's
+													standard dummy text ever.</p>
+											</li>
+											<li class="service web-design">
+												<h4 class="service__header">Web design</h4>
+												<p class="service__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum has been the industry's
+													standard dummy text ever.</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ol class="services__indicators carousel-indicators">
+							<li data-target="#services-slider" data-slide-to="0" class="services__indicator active"></li>
+							<li data-target="#services-slider" data-slide-to="1" class="services__indicator"></li>
+							<li data-target="#services-slider" data-slide-to="2" class="services__indicator"></li>
+						</ol>
+					</div>
+				</section>
+			</article>
+			<article id="portfolio" class="recent-works">
+				<header>
+					<h2 class="recent-works__header">Recent works</h2>
+					<p class="recent-works__post-header">It has survived not only five centuries, but also the leap scrambled it to make a type.</p>
+				</header>
+				<p class="recent-works__categories">
+					<a class="recent-works__categorie active">All</a>
+					<span class="recent-works__categorie-divider">/</span>
+					<a class="recent-works__categorie">Print design</a>
+					<span class="recent-works__categorie-divider">/</span>
+					<a class="recent-works__categorie">Animation</a>
+					<span class="recent-works__categorie-divider">/</span>
+					<a class="recent-works__categorie">Art</a>
+					<span class="recent-works__categorie-divider">/</span>
+					<a class="recent-works__categorie">Web design</a>
+					<span class="recent-works__categorie-divider">/</span>
+					<a class="recent-works__categorie">Photography</a>
+					<span class="recent-works__categorie-divider">/</span>
+					<a class="recent-works__categorie">Video</a>
+				</p>
+				<div class="recent-works__samples">
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-1.jpg|assets/images/recent-works/sample-1@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-1@2x.jpg 2x" src="assets/images/recent-works/sample-1.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-2.jpg|assets/images/recent-works/sample-2@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-2@2x.jpg 2x" src="assets/images/recent-works/sample-2.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-3.jpg|assets/images/recent-works/sample-3@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-3@2x.jpg 2x" src="assets/images/recent-works/sample-3.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-4.jpg|assets/images/recent-works/sample-4@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-4@2x.jpg 2x" src="assets/images/recent-works/sample-4.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-5.jpg|assets/images/recent-works/sample-5@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-5@2x.jpg 2x" src="assets/images/recent-works/sample-5.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-6.jpg|assets/images/recent-works/sample-6@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-6@2x.jpg 2x" src="assets/images/recent-works/sample-6.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-7.jpg|assets/images/recent-works/sample-7@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-7@2x.jpg 2x" src="assets/images/recent-works/sample-7.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+					<figure class="rw-sample">
+						<img class="lazy-img rw-sample__img" alt="recent work" data-src="assets/images/recent-works/sample-8.jpg|assets/images/recent-works/sample-8@2x.jpg"
+							src="assets/images/load.svg" width="480" height="480" title="" />
+						<noscript>
+							<img alt="recent work" srcset="assets/images/recent-works/sample-8@2x.jpg 2x" src="assets/images/recent-works/sample-8.jpg"
+								class="rw-sample__img" title="" />
+						</noscript>
+						<figcaption class="rw-sample__caption">
+							<p class="rw-sample__p">T-shirt design</p>
+							<p class="rw-sample__p">art / t-shirt</p>
+						</figcaption>
+					</figure>
+				</div>
+			</article>
+			<article class="case-study">
+				<header>
+					<h2 class="case-study__header">Case study</h2>
+					<p class="case-study__post-header">A brief story about how this process works, keep an eye till the end.</p>
+				</header>
+				<div class="case-study__container bg-load">
+					<div class="case-study__content">
+						<div id="case-study" class="case-study__slider carousel slide">
+							<div role="listbox" class="carousel-inner">
+								<div class="case-study__slide item active">
+									<h3 class="case-study__slide-header">Accumulate creative ideas</h3>
+									<p class="case-study__slide-p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum
+										is simply dummy text of the print&shy;ing and typesetting let. Lorem Ipsum has been the industry Printing and type&shy;lorem
+										Ipsum has been the setting let.</p>
+									<a role="button" class="button button_cs">Read more</a>
+								</div>
+								<div class="case-study__slide item">
+									<h3 class="case-study__slide-header">Creative ideas accumulate</h3>
+									<p class="case-study__slide-p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum
+										is simply dummy text of the print&shy;ing and typesetting let. Lorem Ipsum has been the industry Print&shy;ing
+										and type&shy;lorem Ipsum has been the setting let.</p>
+									<a role="button" class="button button_cs">Read more</a>
+								</div>
+								<div class="case-study__slide item">
+									<h3 class="case-study__slide-header">Ideas accumulate creative</h3>
+									<p class="case-study__slide-p">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum
+										is simply dummy text of the print&shy;ing and typesetting let. Lorem Ipsum has been the industry Print&shy;ing
+										and type&shy;lorem Ipsum has been the setting let.</p>
+									<a role="button" class="button button_cs">Read more</a>
+								</div>
+							</div>
+							<ol class="case-study__indicators carousel-indicators">
+								<li data-target="#case-study" data-slide-to="0" class="case-study__indicator active"></li>
+								<li data-target="#case-study" data-slide-to="1" class="case-study__indicator"></li>
+								<li data-target="#case-study" data-slide-to="2" class="case-study__indicator"></li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<div class="check-stats bg-load">
+					<div class="check-stats__container">
+						<p class="check-stats__stat favourites">
+							<span class="check-stats__num">3891</span>User favourites</p>
+						<p class="check-stats__stat last-posts">
+							<span class="check-stats__num">281K</span>Posts last 24 hours</p>
+						<p class="check-stats__stat total-posts">
+							<span class="check-stats__num">618</span>Total posts</p>
+						<p class="check-stats__stat campaigns">
+							<span class="check-stats__num">178</span>Campaigns</p>
+						<p class="check-stats__stat features">
+							<span class="check-stats__num">285</span>Amazing Features</p>
+					</div>
+				</div>
+			</article>
+			<article id="pricing" class="pricing">
+				<div class="pricing__container">
+					<header>
+						<h2 class="pricing__header">Our pricing</h2>
+						<p class="pricing__post-header">A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.</p>
+					</header>
+					<div class="pricing__cards">
+						<div class="pricing__card-wrap">
+							<div class="pricing-card pricing-card_gray pricing__card">
+								<header class="pricing-card__header">
+									<h3 class="pricing-card__plan">Starter</h3>
+									<p class="pricing-card__price">
+										<span class="pricing-card__price-val">$19</span>
+										<br/>per month</p>
+								</header>
+								<ul class="pricing-card__features">
+									<li class="pricing-card__feature">Competition analysis methods</li>
+									<li class="pricing-card__feature">All ranked URLs</li>
+									<li class="pricing-card__feature">International support system</li>
+									<li class="pricing-card__feature">Social media tracking</li>
+								</ul>
+								<a role="button" class="button button_pc pricing-card__button">Choose plan</a>
+							</div>
+						</div>
+						<div class="pricing__card-wrap">
+							<div class="pricing-card pricing__card">
+								<header class="pricing-card__header">
+									<h3 class="pricing-card__plan">Premium</h3>
+									<p class="pricing-card__price">
+										<span class="pricing-card__price-val">$39</span>
+										<br/>per month</p>
+								</header>
+								<ul class="pricing-card__features">
+									<li class="pricing-card__feature">Competition analysis methods</li>
+									<li class="pricing-card__feature">All ranked URLs</li>
+									<li class="pricing-card__feature">International support system</li>
+									<li class="pricing-card__feature">Social media tracking</li>
+								</ul>
+								<a role="button" class="button button_pc pricing-card__button">Choose plan</a>
+							</div>
+						</div>
+						<div class="pricing__card-wrap">
+							<div class="pricing-card pricing-card_gray pricing__card">
+								<header class="pricing-card__header">
+									<h3 class="pricing-card__plan">Business</h3>
+									<p class="pricing-card__price">
+										<span class="pricing-card__price-val">$99</span>
+										<br/>per month</p>
+								</header>
+								<ul class="pricing-card__features">
+									<li class="pricing-card__feature">Competition analysis methods</li>
+									<li class="pricing-card__feature">All ranked URLs</li>
+									<li class="pricing-card__feature">International support system</li>
+									<li class="pricing-card__feature">Social media tracking</li>
+								</ul>
+								<a role="button" class="button button_pc pricing-card__button">Choose plan</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="team" class="team bg-load">
+				<header>
+					<div class="team__container">
+						<h2 class="team__header">Our team</h2>
+						<p class="team__post-header">Meet the craziest team. Share your thoughts with them.</p>
+					</div>
+				</header>
+				<div class="team__team bg-load">
+					<ul class="team__members">
+						<li class="team__member">
+							<figure class="team-member team-member_left">
+								<img class="lazy-img team-member__photo" alt="member of our team" data-src="assets/images/team/member-1.jpg|assets/images/team/member-1@2x.jpg"
+									src="assets/images/load.svg" title="" />
+								<noscript>
+									<img alt="member of our team" srcset="assets/images/team/member-1@2x.jpg 2x" src="assets/images/team/member-1.jpg"
+										class="team-member__photo" title="" />
+								</noscript>
+								<figcaption class="team-member__credentials">
+									<div class="team-member__name">Name Soname</div>
+									<div class="team-member__position">Position</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="team__member">
+							<figure class="team-member">
+								<img class="lazy-img team-member__photo" alt="member of our team" data-src="assets/images/team/member-2.jpg|assets/images/team/member-2@2x.jpg"
+									src="assets/images/load.svg" title="" />
+								<noscript>
+									<img alt="member of our team" srcset="assets/images/team/member-2@2x.jpg 2x" src="assets/images/team/member-2.jpg"
+										class="team-member__photo" title="" />
+								</noscript>
+								<figcaption class="team-member__credentials">
+									<div class="team-member__name">Kazi Erfan</div>
+									<div class="team-member__position">UI/UX designer</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="team__member">
+							<figure class="team-member">
+								<img class="lazy-img team-member__photo" alt="member of our team" data-src="assets/images/team/member-3.jpg|assets/images/team/member-3@2x.jpg"
+									src="assets/images/load.svg" title="" />
+								<noscript>
+									<img alt="member of our team" srcset="assets/images/team/member-3@2x.jpg 2x" src="assets/images/team/member-3.jpg"
+										class="team-member__photo" title="" />
+								</noscript>
+								<figcaption class="team-member__credentials">
+									<div class="team-member__name">Name Soname</div>
+									<div class="team-member__position">Position</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="team__member">
+							<figure class="team-member">
+								<img class="lazy-img team-member__photo" alt="member of our team" data-src="assets/images/team/member-4.jpg|assets/images/team/member-4@2x.jpg"
+									src="assets/images/load.svg" title="" />
+								<noscript>
+									<img alt="member of our team" srcset="assets/images/team/member-4@2x.jpg 2x" src="assets/images/team/member-4.jpg"
+										class="team-member__photo" title="" />
+								</noscript>
+								<figcaption class="team-member__credentials">
+									<div class="team-member__name">Name Soname</div>
+									<div class="team-member__position">Position</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li class="team__member">
+							<figure class="team-member team-member_right">
+								<img class="lazy-img team-member__photo" alt="member of our team" data-src="assets/images/team/member-5.jpg|assets/images/team/member-5@2x.jpg"
+									src="assets/images/load.svg" title="" />
+								<noscript>
+									<img alt="member of our team" srcset="assets/images/team/member-5@2x.jpg 2x" src="assets/images/team/member-5.jpg"
+										class="team-member__photo" title="" />
+								</noscript>
+								<figcaption class="team-member__credentials">
+									<div class="team-member__name">Name Soname</div>
+									<div class="team-member__position">Position</div>
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article class="integrations">
+				<div class="integrations__container">
+					<header>
+						<h2 class="integrations__header">Great integrations with others</h2>
+						<p class="integrations__post-header">Suspendisse sed eros mollis, tincidunt felis eget, interdum erat.
+							<br/> Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
+					</header>
+					<ul class="integrations__companies">
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-1.png|assets/images/companies/company-1@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-1@2x.png 2x" src="assets/images/companies/company-1.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-2.png|assets/images/companies/company-2@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-2@2x.png 2x" src="assets/images/companies/company-2.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-3.png|assets/images/companies/company-3@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-3@2x.png 2x" src="assets/images/companies/company-3.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-4.png|assets/images/companies/company-4@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-4@2x.png 2x" src="assets/images/companies/company-4.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-5.png|assets/images/companies/company-5@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-5@2x.png 2x" src="assets/images/companies/company-5.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-6.png|assets/images/companies/company-6@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-6@2x.png 2x" src="assets/images/companies/company-6.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-7.png|assets/images/companies/company-7@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-7@2x.png 2x" src="assets/images/companies/company-7.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-8.png|assets/images/companies/company-8@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-8@2x.png 2x" src="assets/images/companies/company-8.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-9.png|assets/images/companies/company-9@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-9@2x.png 2x" src="assets/images/companies/company-9.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+						<li class="integrations__company">
+							<img class="lazy-img integrations__company-logo" alt="partners company" data-src="assets/images/companies/company-10.png|assets/images/companies/company-10@2x.png"
+								src="assets/images/load.svg" width="210" height="100" title="" />
+							<noscript>
+								<img alt="partners company" srcset="assets/images/companies/company-10@2x.png 2x" src="assets/images/companies/company-10.png"
+									class="integrations__company-logo" title="" />
+							</noscript>
+						</li>
+					</ul>
+				</div>
+			</article>
+			<article id="blog" class="blog">
+				<header>
+					<h2 class="blog__header">Our blog</h2>
+					<p class="blog__post-header">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</p>
+				</header>
+				<div class="blog__articles">
+					<div class="blog-article blog__article">
+						<div class="blog-article__img-wrap">
+							<img class="lazy-img blog-article__img" alt="article preview" data-src="assets/images/blog/article-1.jpg|assets/images/blog/article-1@2x.jpg"
+								src="assets/images/load.svg" width="480" height="480" title="" />
+							<noscript>
+								<img alt="article preview" srcset="assets/images/blog/article-1@2x.jpg 2x" src="assets/images/blog/article-1.jpg"
+									class="blog-article__img" title="" />
+							</noscript>
+						</div>
+						<div class="blog-article__container">
+							<header class="blog-article__header-wrap">
+								<p class="blog-article__pre-header">art / t-shirt</p>
+								<h3 class="blog-article__header">T-shirt design</h3>
+							</header>
+							<p class="blog-article__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard
+								dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+								book.</p>
+							<a role="button" class="blog-article__link">Read more
+								<i class="fa fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="blog-article blog__article">
+						<div class="blog-article__img-wrap">
+							<img class="lazy-img blog-article__img" alt="article preview" data-src="assets/images/blog/article-2.jpg|assets/images/blog/article-2@2x.jpg"
+								src="assets/images/load.svg" width="480" height="480" title="" />
+							<noscript>
+								<img alt="article preview" srcset="assets/images/blog/article-2@2x.jpg 2x" src="assets/images/blog/article-2.jpg"
+									class="blog-article__img" title="" />
+							</noscript>
+						</div>
+						<div class="blog-article__container">
+							<header class="blog-article__header-wrap">
+								<p class="blog-article__pre-header">art / t-shirt</p>
+								<h3 class="blog-article__header">T-shirt design</h3>
+							</header>
+							<p class="blog-article__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard
+								dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+								book.</p>
+							<a role="button" class="blog-article__link">Read more
+								<i class="fa fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="blog-article blog__article">
+						<div class="blog-article__img-wrap">
+							<img class="lazy-img blog-article__img" alt="article preview" data-src="assets/images/blog/article-3.jpg|assets/images/blog/article-3@2x.jpg"
+								src="assets/images/load.svg" width="480" height="480" title="" />
+							<noscript>
+								<img alt="article preview" srcset="assets/images/blog/article-3@2x.jpg 2x" src="assets/images/blog/article-3.jpg"
+									class="blog-article__img" title="" />
+							</noscript>
+						</div>
+						<div class="blog-article__container">
+							<header class="blog-article__header-wrap">
+								<p class="blog-article__pre-header">art / t-shirt</p>
+								<h3 class="blog-article__header">T-shirt design</h3>
+							</header>
+							<p class="blog-article__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard
+								dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+								book.</p>
+							<a role="button" class="blog-article__link">Read more
+								<i class="fa fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="blog-article blog__article">
+						<div class="blog-article__img-wrap">
+							<img class="lazy-img blog-article__img" alt="article preview" data-src="assets/images/blog/article-4.jpg|assets/images/blog/article-4@2x.jpg"
+								src="assets/images/load.svg" width="480" height="480" title="" />
+							<noscript>
+								<img alt="article preview" srcset="assets/images/blog/article-4@2x.jpg 2x" src="assets/images/blog/article-4.jpg"
+									class="blog-article__img" title="" />
+							</noscript>
+						</div>
+						<div class="blog-article__container">
+							<header class="blog-article__header-wrap">
+								<p class="blog-article__pre-header">art / t-shirt</p>
+								<h3 class="blog-article__header">T-shirt design</h3>
+							</header>
+							<p class="blog-article__p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard
+								dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+								book.</p>
+							<a role="button" class="blog-article__link">Read more
+								<i class="fa fa-angle-double-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="contact" class="keep-in-touch">
+				<div class="keep-in-touch__container">
+					<header>
+						<h2 class="keep-in-touch__header">Keep in touch</h2>
+						<p class="keep-in-touch__post-header">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</p>
+					</header>
+					<address class="keep-in-touch__contacts">
+						<p class="keep-in-touch__contacts-header">Our address</p>
+						<p class="keep-in-touch__contacts-p">House #13, Streat road, Sydney
+							<br/> 2310 Australia</p>
+						<p class="keep-in-touch__contacts-header">Call us</p>
+						<p class="keep-in-touch__contacts-p">+ 880 168 109 1425
+							<br/> + 0216809142</p>
+						<p class="keep-in-touch__contacts-header">Email us</p>
+						<p class="keep-in-touch__contacts-p">
+							<a href="mailto:contactus@email.com">contactus@email.com</a>
+						</p>
+					</address>
+					<div class="keep-in-touch__send-mail">
+						<form>
+							<input name="name" placeholder="Name" type="text" class="keep-in-touch__form-control" />
+							<input name="email" placeholder="Email" type="email" class="keep-in-touch__form-control" />
+							<input name="subject" placeholder="Subject" type="text" class="keep-in-touch__form-control" />
+							<textarea name="message" placeholder="Message" rows="7" class="keep-in-touch__form-control"></textarea>
+							<button type="submit" class="keep-in-touch__button button button_sm">Send message</button>
+						</form>
+					</div>
+				</div>
+			</article>
+		</main>
+		<aside class="aside bg-load">
+			<h2 class="aside__header">Let's get started now.
+				<b class="aside__b">It's FREE!</b>
+			</h2>
+			<p class="aside__p">30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.</p>
+			<a role="button"
+				class="button button_aside aside__button">Start free trial</a>
+		</aside>
+		<footer class="footer">
+			<div class="footer__container">
+				<ul class="footer__media">
+					<li class="footer__media-link">
+						<a href="https://www.facebook.com/">
+							<i class="fa fa-facebook"></i>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="https://twitter.com/">
+							<i class="fa fa-twitter"></i>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="https://www.rss.com/">
+							<i class="fa fa-rss"></i>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="https://plus.google.com/">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+								style="enable-background:new 0 0 512 512;" xml:space="preserve" class="google-plus">
+								<g>
+									<path d="M223.5,82.1c11.8,9.6,36.4,29.7,36.4,68c0,37.3-21.5,54.9-43.1,71.5c-6.7,6.6-14.4,13.6-14.4,24.7c0,11.1,7.7,17.2,13.3,21.7l18.5,14.1c22.6,18.6,43.1,35.8,43.1,70.6c0,47.4-46.7,95.2-135,95.2C67.9,448,32,413.2,32,375.9c0-18.1,9.2-43.8,39.5-61.5c31.8-19.1,75-21.7,98-23.2c-7.2-9.1-15.4-18.7-15.4-34.3c0-8.6,2.6-13.6,5.1-19.7c-5.6,0.5-11.3,1-16.4,1c-54.4,0-85.2-39.8-85.2-79.1c0-23.2,10.8-48.9,32.9-67.5C119.8,68,154.7,64,182.4,64h105.7l-32.8,18.1H223.5z M187,305.9c-4.1-0.5-6.7-0.5-11.8-0.5c-4.6,0-32.3,1-53.9,8c-11.3,4-44.1,16.1-44.1,51.9c0,35.8,35.4,61.5,90.3,61.5c49.3,0,75.4-23.2,75.4-54.4C242.9,346.7,226,333.1,187,305.9 M201.9,210.1c11.8-11.6,12.8-27.7,12.8-36.8c0-36.3-22.1-92.7-64.7-92.7c-13.3,0-27.7,6.5-35.9,16.6c-8.7,10.6-11.3,24.2-11.3,37.3c0,33.8,20,89.7,64.2,89.7C179.8,224.3,193.6,218.2,201.9,210.1"
+										class="google-plus__color"></path>
+									<polygon points="480,142.3 401.7,142.3 401.7,64.1 384,64.1 384,142.3 304.3,142.3 304.3,160.1 384,160.1 384,241 401.7,241 401.7,160.1 480,160.1"
+										class="google-plus__color"></polygon>
+								</g>
+							</svg>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="https://www.linkedin.com/">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="skype:bino?call">
+							<i class="fa fa-skype"></i>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="https://vimeo.com/">
+							<i class="fa fa-vimeo"></i>
+						</a>
+					</li>
+					<li class="footer__media-link">
+						<a href="https://www.tumblr.com/">
+							<i class="fa fa-tumblr"></i>
+						</a>
+					</li>
+				</ul>
+				<p class="footer__copyright">Kazi Erfan © All Rights Reserved</p>
+			</div>
+			<a href="#" class="footer__up">
+				<i class="fa fa-chevron-up"></i>
+			</a>
+		</footer>
+		<script src="assets/scripts/app.min.js"></script>
+		<script>!function(){"use strict";function e(e,t,n){function s(){for(var t,r=0;r<o.length;r++)o[r].href&&o[r].href.indexOf(e)>-1&&(t=!0);t?i.media=n||"all":setTimeout(s)}var i=window.document.createElement("link"),r=t||window.document.getElementsByTagName("script")[0],o=window.document.styleSheets;return i.rel="stylesheet",i.href=e,i.media="only x",r.parentNode.insertBefore(i,r),s(),i}e("assets/styles/app.min.css")}();</script>
+	</body>
+
+</html>
